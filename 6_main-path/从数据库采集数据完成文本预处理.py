@@ -72,6 +72,10 @@ f.close;
 f = file(prefix_address+'dictionary.data','w')
 pickle.dump(dictionary,f)
 f.close;
+
+f = file(prefix_address+'corpus.data','w')
+pickle.dump(corpus,f)
+f.close;
 f = file(prefix_address+'gas.data','w')
 pickle.dump(gas,f)
 f.close;

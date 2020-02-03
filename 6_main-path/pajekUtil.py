@@ -337,15 +337,65 @@ class PajekUtil(object):
                             tmp3.add_edge(tmp,i,weight = g[tmp][i]['weight'])
                         tmp2[1].extend(tmp4)
                         dic[i]=tmp2
-                '''
-                for k in dic:
-                    print "dict[%s]=" % k,dic[k][0]
-                    for s in dic[k][1]:
-                        print s.edges()
-                '''
         result = sorted(dic.items(),lambda x,y:cmp(x[1][0],y[1][0]),reverse=True)
         return result[0]
-        
+
+    def getmulti_MaxWeightPathBySingleNode_Graph_newSumMethod_textSim_topology(self, nodeID, g, gas, sim_matrix, semantic_weight =1.0,topology_weight =1.0):
+        '''
+        #if there exists multiple maxWeight path,draw them all
+        #(3561, [4.200226000000001, [graph1,graph2,......]])
+        :param nodeID:
+        :param g:
+        :param gas:
+        :param sim_matrix:
+        :return:
+        '''
+        q = Queue.Queue()
+        graph = nx.DiGraph()
+        q.put(nodeID)
+        dic = dict()
+        graph.add_node(nodeID, ga=g.node[nodeID]['ga'])
+        dic[nodeID] = [0.0, [graph]]
+        while not q.empty():
+            tmp = q.get()
+            successors = g.successors(tmp)
+            for i in successors:
+                if dic.get(i) is None:
+                    # print "way1"
+                    q.put(i)
+                    tmp4 = copy.deepcopy(dic.get(tmp)[1])
+
+                    tmp_value = self.internode_sum_distance(g, gas, tmp4[0].nodes(), i, sim_matrix)
+                    for tmp3 in tmp4:
+                        tmp3.add_node(i, ga=g.node[i]['ga'])
+                        tmp3.add_edge(tmp, i, weight=g[tmp][i]['weight'])
+                    dic[i] = [dic.get(tmp)[0] + semantic_weight*tmp_value+topology_weight*g[tmp][i]['weight'], tmp4]
+
+                    # need change
+                else:
+                    tmp2 = dic.get(i)
+                    # print "way2"
+                    tmp_value = self.internode_sum_distance(g, gas, dic.get(tmp)[1][0].nodes(), i, sim_matrix)
+                    if tmp2[0] < dic.get(tmp)[0] + semantic_weight*tmp_value+topology_weight*g[tmp][i]['weight']:
+                        # need change
+                        tmp4 = copy.deepcopy(dic.get(tmp)[1])
+
+                        for tmp3 in tmp4:
+                            tmp3.add_node(i, ga=g.node[i]['ga'])
+                            tmp3.add_edge(tmp, i, weight=g[tmp][i]['weight'])
+                        dic[i] = [dic.get(tmp)[0] + semantic_weight*tmp_value+topology_weight*g[tmp][i]['weight'], tmp4]
+                        # need change
+                    elif tmp2[0] == dic.get(tmp)[0] + semantic_weight*tmp_value+topology_weight*g[tmp][i]['weight']:
+                        # need change
+                        tmp4 = copy.deepcopy(dic.get(tmp)[1])
+                        for tmp3 in tmp4:
+                            tmp3.add_node(i, ga=g.node[i]['ga'])
+                            tmp3.add_edge(tmp, i, weight=g[tmp][i]['weight'])
+                        tmp2[1].extend(tmp4)
+                        dic[i] = tmp2
+        result = sorted(dic.items(), lambda x, y: cmp(x[1][0], y[1][0]), reverse=True)
+        return result[0]
+
 
 
     def getmulti_MaxWeightPathBySingleNode_Graph_newSumMethod(self,nodeID,g,gas,sim_matrix):
@@ -410,10 +460,18 @@ class PajekUtil(object):
                 '''
         result = sorted(dic.items(),lambda x,y:cmp(x[1][0],y[1][0]),reverse=True)
         return result[0]
-    # this function compute sum of distance in a dataset "sources" to a given node "target" in graph g  
-    # and return sum value
-    def internode_sum_distance(self,g,gas,sources,target,sim_matrix):
 
+    def internode_sum_distance(self,g,gas,sources,target,sim_matrix):
+        '''
+        this function compute sum of distance in a dataset "sources" to a given node "target" in graph g
+        and return sum value
+        :param g:
+        :param gas:
+        :param sources: 
+        :param target:
+        :param sim_matrix:
+        :return:
+        '''
         sum_value =0.0
         #tmp_id1 = gas.index(g.node[target]['ga'])
         for source in sources:

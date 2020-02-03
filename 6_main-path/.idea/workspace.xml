@@ -2,19 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da3212c-3719-4cd3-a2f7-fcf5a41a83c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DensityPeakCluster/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DensityPeakCluster/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DensityPeakCluster/distance/createMainPathData.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder_data_main_path_flower.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PathTopic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/创建基于拓扑权重和文本相似度权重的多主路径全过程.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/创建基于节点权重和连线权重的查询主路径的全过程.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/.idea/DensityPeakCluster.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/cluster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_in_paper/cluster_dp.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_in_paper/example_distances.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_iris_flower/iris.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_iris_flower/iris.forcluster" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_iris_flower/iris.label" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/integrated_main_path_sim_length.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/integrated_main_path_sim_length.forcluster" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/integrated_main_path_sim_length_pearson.forcluster" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/main_path.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/main_path_cosine.forcluster" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/main_path_topic_T0_S1.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/main_path_topic_T0_S1_cosine.forcluster" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/node_num_of_path_list.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/createMainPathData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/distance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/distance_builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/distance_builder_data_iris_flower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/distance_builder_data_main_path_flower.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/error_wrongvec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/plot_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step1_choose_center.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step1_hybrid_choose_center.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step2_cluster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step2_hybrid_cluster.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/浏览主路径的标题_摘要_多主路径_基于聚类的方法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/createMainPathData_4_Cluster_based_filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/创建单一主路径_拓扑权重_文本相似度权重_文本权重任意两节点相似度累加.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/创建单一主路径_拓扑权重_文本相似度权重_文本权重非任意两节点相似度累加.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/创建多主路径_拓扑权重_文本相似度权重_文本权重任意两节点相似度累加.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/创建多主路径_拓扑权重_文本相似度权重_文本权重非任意两节点相似度累加.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/浏览主路径的标题_摘要_单一主路径_sum新方法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/浏览主路径的标题_摘要_单一主路径_sum旧方法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/浏览主路径的标题_摘要_基于聚类的主路径筛选方法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/浏览主路径的标题_摘要_多主路径_sum新方法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/浏览主路径的标题_摘要_多主路径_sum旧方法.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/浏览主路径的标题_摘要_查询主路径.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/统计弱连通子图_拓扑权重_文本相似度权重的多主路径_文本权重任意两节点相似度累加.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/统计弱连通子图_拓扑权重_文本相似度权重的多主路径_文本权重非任意两节点相似度累加.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重任意两节点相似度累加.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重非任意两节点相似度累加.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DensityPeakCluster" beforeDir="false" afterPath="$PROJECT_DIR$/DensityPeakCluster" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DensityPeakCluster/data/data_iris_flower/iris.forcluster" beforeDir="false" afterPath="$PROJECT_DIR$/DensityPeakCluster/data/data_iris_flower/iris.forcluster" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DensityPeakCluster/distance/distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/DensityPeakCluster/distance/distance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DensityPeakCluster/step1_choose_center.py" beforeDir="false" afterPath="$PROJECT_DIR$/DensityPeakCluster/step1_choose_center.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextBasedTechRoadMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/TextBasedTechRoadMap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/deleteLoops_3603.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/deleteLoops_3603.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/deleteLoops_spc_3603.net" beforeDir="false" afterPath="$PROJECT_DIR$/data/deleteLoops_spc_3603.net" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index.data" beforeDir="false" afterPath="$PROJECT_DIR$/data/index.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/text_lsi.data" beforeDir="false" afterPath="$PROJECT_DIR$/data/text_lsi.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figure/Top1_query_node1_arc1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figure/Top1_query_node1_arc10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figure/Top5_query_node1_arc1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figure/Top5_query_node1_arc10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figure/Top5_query_node2_arc1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figure/top10_newSumMethod_1_1_hybrid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figure/top10_oldMethod_1_1_hybrid.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pajekUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/pajekUtil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/technologyEvolutionRoadMapDataClean.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/technologyEvolutionRoadMapDataClean.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top10_newSumMethod_hybrid_T1_S1.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/top10_oldSumMethod_hybrid_T10_S1.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/top10_oldSumMethod_hybrid_T1_S1.net" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/从数据库采集数据完成文本预处理.py" beforeDir="false" afterPath="$PROJECT_DIR$/从数据库采集数据完成文本预处理.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/创建基于拓扑权重和文本相似度权重的多主路径全过程.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/创建基于节点权重和连线权重的查询主路径的全过程.py" beforeDir="false" afterPath="$PROJECT_DIR$/创建基于节点权重和连线权重的查询主路径的全过程.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/新建文本文档.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,52 +94,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/createMainPathData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/numpy/core/shape_base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="237" column="56" selection-start-line="237" selection-start-column="56" selection-end-line="237" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PathTopic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DensityPeakCluster/step1_choose_center.py">
+        <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/浏览主路径的标题_摘要_多主路径_基于聚类的方法.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <caret line="79" column="50" lean-forward="true" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+              <folding>
+                <element signature="e#16#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/浏览主路径的标题_摘要_多主路径_sum新方法.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="50" column="76" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/plot_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding>
+                <element signature="e#47#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step2_hybrid_cluster.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#47#61#0" expanded="true" />
               </folding>
@@ -79,54 +139,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder_data_main_path_flower.py">
+        <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/createMainPathData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-              <folding>
-                <element signature="e#149#179#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="394">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/distance.py">
+        <entry file="file://$PROJECT_DIR$/createMainPathData_4_Cluster_based_filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="72" column="40" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DensityPeakCluster/data/data_main_path/integrated_main_path_sim_length.data">
+        <entry file="file://$PROJECT_DIR$/浏览主路径的标题_摘要_基于聚类的主路径筛选方法.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="941" column="69" lean-forward="true" selection-start-line="941" selection-end-line="941" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/从数据库采集数据完成文本预处理.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="77" selection-start-line="77" selection-end-line="79" selection-end-column="20" />
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#16#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/创建基于拓扑权重和文本相似度权重的多主路径全过程.py">
+        <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
+            <state relative-caret-position="1936">
+              <caret line="95" column="26" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="26" />
               <folding>
-                <element signature="e#16#39#0" expanded="true" />
+                <element signature="e#47#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/cluster.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6886">
+              <caret line="317" column="42" selection-start-line="317" selection-start-column="8" selection-end-line="317" selection-end-column="42" />
+              <folding>
+                <element signature="e#47#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,14 +203,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>_Graph</find>
-      <find>getMaxWeightPathBySingleNode</find>
-      <find>combine</find>
-      <find>#</find>
-      <find>replace</find>
-      <find>args</find>
-      <find>pajekUtil</find>
-      <find>arcWeight</find>
       <find>global</find>
       <find>getSimByNodeID_nodeWeight</find>
       <find>getMaxWeightPathBySingleNode_graph</find>
@@ -162,13 +214,29 @@
       <find>COMBINE</find>
       <find>sim</find>
       <find>topo</find>
-      <find>getmulti_MaxWeightPathBySingleNode_Graph</find>
       <find>load</find>
       <find>generatePathTopic</find>
+      <find>sum</find>
+      <find>internode_sum_distance</find>
+      <find>new</find>
+      <find>create_sim_matrix</find>
+      <find>addyLSIWeight2TopologyWeight4ArcInGrahphViaSimMatrix</find>
+      <find>addyLSIWeight2TopologyWeight4ArcInGrahph</find>
+      <find>addyLSIWeight2TopologyWeight</find>
+      <find>getmulti_MaxWeightPathBySingleNode_Graph_newSumMethod</find>
+      <find>getmulti_MaxWeightPathBySingleNode_Graph</find>
+      <find>multi_sources_globalMainPath</find>
+      <find>f.writ</find>
+      <find>add</find>
+      <find>write</find>
+      <find>writeGraph2pa</find>
+      <find>local_hybrid_density</find>
+      <find>node_num_of_path_list</find>
+      <find>min_distance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/DensityPeakCluster" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -176,19 +244,49 @@
         <option value="$PROJECT_DIR$/trial.py" />
         <option value="$PROJECT_DIR$/执行Text_based_techRoadMap的过程.py" />
         <option value="$PROJECT_DIR$/输出查询主路径的节点及其文本内容.py" />
-        <option value="$PROJECT_DIR$/创建基于节点权重和连线权重的查询主路径的全过程.py" />
-        <option value="$PROJECT_DIR$/PajekUtil.py" />
         <option value="$PROJECT_DIR$/创建基于节点权重的查询主路径全过程.py" />
-        <option value="$PROJECT_DIR$/创建基于拓扑权重和文本相似度权重的多主路径全过程.py" />
-        <option value="$PROJECT_DIR$/TextBasedTechRoadMap.py" />
         <option value="$PROJECT_DIR$/DensityPeakCluster/data/PathTopic.py" />
         <option value="$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder_data_iris_flower.py" />
         <option value="$PROJECT_DIR$/DensityPeakCluster/step1_choose_center.py" />
-        <option value="$PROJECT_DIR$/从数据库采集数据完成文本预处理.py" />
         <option value="$PROJECT_DIR$/PathTopic.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster/distance/distance.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster/plot_utils.py" />
+        <option value="$PROJECT_DIR$/从数据库采集数据完成文本预处理.py" />
+        <option value="$PROJECT_DIR$/创建基于拓扑权重和文本相似度权重的多主路径全过程.py" />
+        <option value="$PROJECT_DIR$/创建基于拓扑权重和文本相似度权重的多主路径全过程_文本权重任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/创建基于拓扑权重和文本相似度权重的多主路径全过程_文本权重非任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/浏览主路径的标题_摘要.py" />
+        <option value="$PROJECT_DIR$/浏览主路径的标题_摘要_单一主路径_sum新方法.py" />
+        <option value="$PROJECT_DIR$/浏览主路径的标题_摘要_单一主路径_sum旧方法.py" />
+        <option value="$PROJECT_DIR$/PajekUtil.py" />
+        <option value="$PROJECT_DIR$/trial.net" />
+        <option value="$PROJECT_DIR$/创建单一主路径_拓扑权重_文本相似度权重_文本权重非任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/创建单一主路径_拓扑权重_文本相似度权重_文本权重任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/统计弱连通子图_拓扑权重_文本相似度权重的多主路径_文本权重非任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/统计弱连通子图_拓扑权重_文本相似度权重的多主路径_文本权重任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重非任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/创建多主路径_拓扑权重_文本相似度权重_文本权重非任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/创建多主路径_拓扑权重_文本相似度权重_文本权重任意两节点相似度累加.py" />
+        <option value="$PROJECT_DIR$/浏览主路径的标题_摘要_多主路径_sum新方法.py" />
+        <option value="$PROJECT_DIR$/TextBasedTechRoadMap.py" />
+        <option value="$PROJECT_DIR$/浏览主路径的标题_摘要_多主路径_sum旧方法.py" />
+        <option value="$PROJECT_DIR$/num_statistics.txt" />
+        <option value="$PROJECT_DIR$/浏览主路径的标题_摘要_查询主路径.py" />
+        <option value="$PROJECT_DIR$/创建基于节点权重和连线权重的查询主路径的全过程.py" />
         <option value="$PROJECT_DIR$/DensityPeakCluster/distance/createMainPathData.py" />
         <option value="$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder_data_main_path_flower.py" />
-        <option value="$PROJECT_DIR$/DensityPeakCluster/distance/distance.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step2_cluster.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step1_hybrid_choose_center.py" />
+        <option value="$PROJECT_DIR$/浏览主路径的标题_摘要_多主路径_基于聚类的方法.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/浏览主路径的标题_摘要_多主路径_基于聚类的方法.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/plot.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/cluster.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step2_hybrid_cluster.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/createMainPathData.py" />
+        <option value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/浏览主路径的标题_摘要_多主路径_基于聚类的方法.py" />
+        <option value="$PROJECT_DIR$/createMainPathData_4_Cluster_based_filter.py" />
+        <option value="$PROJECT_DIR$/浏览主路径的标题_摘要_基于聚类的主路径筛选方法.py" />
       </list>
     </option>
   </component>
@@ -212,51 +310,6 @@
               <item name="6_main-path" type="b2602c69:ProjectViewProjectNode" />
               <item name="6_main-path" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="6_main-path" type="b2602c69:ProjectViewProjectNode" />
-              <item name="6_main-path" type="462c0819:PsiDirectoryNode" />
-              <item name="DensityPeakCluster" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="6_main-path" type="b2602c69:ProjectViewProjectNode" />
-              <item name="6_main-path" type="462c0819:PsiDirectoryNode" />
-              <item name="DensityPeakCluster" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="6_main-path" type="b2602c69:ProjectViewProjectNode" />
-              <item name="6_main-path" type="462c0819:PsiDirectoryNode" />
-              <item name="DensityPeakCluster" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="data_in_paper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="6_main-path" type="b2602c69:ProjectViewProjectNode" />
-              <item name="6_main-path" type="462c0819:PsiDirectoryNode" />
-              <item name="DensityPeakCluster" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="data_iris_flower" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="6_main-path" type="b2602c69:ProjectViewProjectNode" />
-              <item name="6_main-path" type="462c0819:PsiDirectoryNode" />
-              <item name="DensityPeakCluster" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="data_main_path" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="6_main-path" type="b2602c69:ProjectViewProjectNode" />
-              <item name="6_main-path" type="462c0819:PsiDirectoryNode" />
-              <item name="DensityPeakCluster" type="462c0819:PsiDirectoryNode" />
-              <item name="distance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="6_main-path" type="b2602c69:ProjectViewProjectNode" />
-              <item name="6_main-path" type="462c0819:PsiDirectoryNode" />
-              <item name="DensityPeakCluster" type="462c0819:PsiDirectoryNode" />
-              <item name="distance" type="462c0819:PsiDirectoryNode" />
-              <item name="distance.py" type="8704e2dd:PyFileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -271,10 +324,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\mycode_git\smart_patent_mining\6_main-path\DensityPeakCluster_SemanticMainPathAnalysis" />
+      <recent name="C:\Users\Administrator\mycode_git\smart_patent_mining\6_main-path\DensityPeakCluster_SemanticMainPathAnalysis\distance" />
       <recent name="C:\Users\Administrator\mycode_git\smart_patent_mining\6_main-path" />
       <recent name="C:\Users\Administrator\mycode_git\smart_patent_mining\6_main-path\DensityPeakCluster" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\mycode_git\smart_patent_mining\6_main-path" />
+      <recent name="C:\Users\Administrator\mycode_git\smart_patent_mining\6_main-path\DensityPeakCluster_SemanticMainPathAnalysis" />
+      <recent name="C:\Users\Administrator\mycode_git\smart_patent_mining\6_main-path\DensityPeakCluster_SemanticMainPathAnalysis\distance" />
       <recent name="C:\Users\Administrator\mycode_git\smart_patent_mining\6_main-path\DensityPeakCluster\distance" />
     </key>
   </component>
@@ -290,8 +348,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.distance_builder_data_main_path_flower">
-    <configuration name="从数据库采集数据完成文本预处理" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.浏览主路径的标题_摘要_基于聚类的主路径筛选方法">
+    <configuration name="浏览主路径的标题_摘要_基于聚类的主路径筛选方法" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="6_main-path" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,7 +361,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/从数据库采集数据完成文本预处理.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/浏览主路径的标题_摘要_基于聚类的主路径筛选方法.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,7 +370,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="创建基于节点权重的查询主路径全过程" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="浏览主路径的标题_摘要_多主路径_基于聚类的方法" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="6_main-path" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/浏览主路径的标题_摘要_多主路径_基于聚类的方法.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重非任意两节点相似度累加" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="6_main-path" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -324,7 +403,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/创建基于节点权重的查询主路径全过程.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重非任意两节点相似度累加.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -333,7 +412,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="createMainPathData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="创建多主路径_拓扑权重_文本相似度权重_文本权重非任意两节点相似度累加" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="6_main-path" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -341,11 +420,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DensityPeakCluster/distance" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DensityPeakCluster/distance/createMainPathData.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/创建多主路径_拓扑权重_文本相似度权重_文本权重非任意两节点相似度累加.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,7 +433,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="distance_builder_data_main_path_flower" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="创建多主路径_拓扑权重_文本相似度权重_文本权重任意两节点相似度累加" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="6_main-path" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -362,11 +441,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DensityPeakCluster/distance" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder_data_main_path_flower.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/创建多主路径_拓扑权重_文本相似度权重_文本权重任意两节点相似度累加.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -375,7 +454,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="step1_choose_center" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="createMainPathData (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="6_main-path" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -383,11 +462,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DensityPeakCluster" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DensityPeakCluster/step1_choose_center.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/createMainPathData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="step1_hybrid_choose_center" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="6_main-path" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step1_hybrid_choose_center.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="step2_hybrid_cluster" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="6_main-path" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step2_hybrid_cluster.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -398,10 +519,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.distance_builder_data_main_path_flower" />
-        <item itemvalue="Python.createMainPathData" />
-        <item itemvalue="Python.从数据库采集数据完成文本预处理" />
-        <item itemvalue="Python.step1_choose_center" />
+        <item itemvalue="Python.浏览主路径的标题_摘要_基于聚类的主路径筛选方法" />
+        <item itemvalue="Python.createMainPathData (1)" />
+        <item itemvalue="Python.浏览主路径的标题_摘要_多主路径_基于聚类的方法" />
+        <item itemvalue="Python.step1_hybrid_choose_center" />
+        <item itemvalue="Python.step2_hybrid_cluster" />
       </list>
     </recent_temporary>
   </component>
@@ -421,20 +543,20 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.396861" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.36248133" />
       <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.24439462" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22071308" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43972835" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8319185" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.50254667" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3293718" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3293718" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3293718" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3293718" />
+      <window_info anchor="bottom" id="Event Log" order="10" weight="0.3293718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -445,285 +567,482 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TextBasedTechRoadMap.py</url>
-          <line>120</line>
+          <line>119</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/TextBasedTechRoadMap.py</url>
-          <line>124</line>
+          <line>123</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PajekUtil.py</url>
-          <line>121</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/创建基于节点权重和连线权重的查询主路径的全过程.py</url>
-          <line>12</line>
+          <line>31</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PajekUtil.py</url>
-          <line>420</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DensityPeakCluster/distance/createMainPathData.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重任意两节点相似度累加.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重任意两节点相似度累加.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重任意两节点相似度累加.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重非任意两节点相似度累加.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/浏览主路径的标题_摘要_单一主路径_sum新方法.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/浏览主路径的标题_摘要_单一主路径_sum旧方法.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/统计弱连通子图_拓扑权重_文本相似度权重的多主路径_文本权重非任意两节点相似度累加.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/创建多主路径_拓扑权重_文本相似度权重_文本权重任意两节点相似度累加.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/创建基于节点权重和连线权重的查询主路径的全过程.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TextBasedTechRoadMap.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/createMainPathData.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/createMainPathData.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="subgraphs" />
+        <watch expression="resultGraph" />
+        <watch expression="resultGraph" />
+        <watch expression="self.g" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/13371_deleteLoop_giantComponent.net" />
-    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/networkx/classes/function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <caret line="404" column="4" selection-start-line="404" selection-start-column="4" selection-end-line="404" selection-end-column="4" />
+    <entry file="file://$PROJECT_DIR$/创建基于拓扑权重和文本相似度权重的多主路径全过程.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+    <entry file="file://$PROJECT_DIR$/trial.net" />
+    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/networkx/classes/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="1134" selection-start-line="1134" selection-end-line="1134" />
+        <state relative-caret-position="24926">
+          <caret line="1136" selection-start-line="1136" selection-end-line="1136" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/创建基于节点权重和连线权重的查询主路径的全过程.py">
+    <entry file="file://$PROJECT_DIR$/g_result_list.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g_result_list_non_arbitraryPair.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="83" column="4" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/g_result_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="118" column="4" lean-forward="true" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/创建单一主路径_拓扑权重_文本相似度权重_文本权重任意两节点相似度累加.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重任意两节点相似度累加.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="66" column="119" selection-start-line="66" selection-start-column="119" selection-end-line="66" selection-end-column="119" />
           <folding>
             <element signature="e#16#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/scripts/forest Paper.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
+    <entry file="file://$PROJECT_DIR$/创建单一主路径_拓扑权重_文本相似度权重_文本权重非任意两节点相似度累加.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="39" column="49" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/data/data_iris_flower/iris.label">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/data/data_in_paper/example_distances.dat">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/data/data_in_paper/cluster_dp.m">
+    <entry file="file://$PROJECT_DIR$/计算重合节点数_拓扑权重_文本相似度权重的单一主路径_文本权重非任意两节点相似度累加.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="77" column="16" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/deleteLoops_3603.net">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deleteLoops_3603.net" />
-    <entry file="file://$PROJECT_DIR$/data/deleteLoops_spc_3603.net">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/创建基于节点权重的查询主路径全过程.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/networkx/classes/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="406" selection-start-line="406" selection-end-line="406" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TextBasedTechRoadMap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="297" column="19" lean-forward="true" selection-start-line="297" selection-start-column="19" selection-end-line="297" selection-end-column="19" />
+        <state relative-caret-position="166">
+          <caret line="76" column="16" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#16#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PajekUtil.py">
+    <entry file="file://$PROJECT_DIR$/num_weekCC_formula_1_S1_T200.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top10_newSumMethod_hybrid_T0_S1.net">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/num_weekCC_formula_2_S0_T1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="771" selection-start-line="771" selection-end-line="771" />
+        <state relative-caret-position="198">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/gensim/interfaces.py">
+    <entry file="file://$PROJECT_DIR$/num_weekCC_formula_2_S1_T20.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        <state relative-caret-position="176">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/data/data_iris_flower/iris.data">
+    <entry file="file://$PROJECT_DIR$/num_weekCC_formula_2_S1_T0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/num_weekCC_formula_1_S1_T0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/统计弱连通子图_拓扑权重_文本相似度权重的多主路径_文本权重非任意两节点相似度累加.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/networkx/classes/digraph.py">
+    <entry file="file://$PROJECT_DIR$/num_statistics.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="276" selection-start-line="276" selection-end-line="276" />
+        <state relative-caret-position="242">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/data/data_main_path/main_path.data">
+    <entry file="file://$PROJECT_DIR$/total_statistics.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="1247" column="535" selection-start-line="1247" selection-start-column="535" selection-end-line="1247" selection-end-column="535" />
+        <state relative-caret-position="176">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder_data_patentMainPath.py" />
-    <entry file="file://$PROJECT_DIR$/technologyEvolutionRoadMapDataClean.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="5" />
+    <entry file="file://$PROJECT_DIR$/浏览主路径的标题_摘要_多主路径_sum旧方法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <element signature="e#16#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/统计弱连通子图_拓扑权重_文本相似度权重的多主路径_文本权重非任意两节点相似度累加.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding>
+            <element signature="e#16#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/创建多主路径_拓扑权重_文本相似度权重_文本权重任意两节点相似度累加.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/浏览主路径的标题_摘要_查询主路径.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/创建多主路径_拓扑权重_文本相似度权重_文本权重非任意两节点相似度累加.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="28" column="60" selection-start-line="19" selection-end-line="28" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/统计弱连通子图_拓扑权重_文本相似度权重的多主路径_文本权重任意两节点相似度累加.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="44" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/创建基于节点权重和连线权重的查询主路径的全过程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+          <folding>
+            <element signature="e#16#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/浏览主路径的标题_摘要_单一主路径_sum旧方法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/浏览主路径的标题_摘要_单一主路径_sum新方法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="51" />
+          <folding>
+            <element signature="e#16#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/createMainPathData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="69" column="33" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DensityPeakCluster/plot_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="57" column="49" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
+        <state relative-caret-position="64">
+          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
           <folding>
             <element signature="e#47#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder_data_iris_flower.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" selection-start-line="14" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/data/data_iris_flower/iris.forcluster">
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_in_paper/cluster_dp.m">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/cluster.py">
+    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/sklearn/manifold/mds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="111" column="46" selection-start-line="111" selection-start-column="46" selection-end-line="111" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/step2_cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/创建基于拓扑权重和文本相似度权重的多主路径全过程.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
-          <folding>
-            <element signature="e#16#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/从数据库采集数据完成文本预处理.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="77" selection-start-line="77" selection-end-line="79" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda2/Lib/site-packages/numpy/core/shape_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="237" column="56" selection-start-line="237" selection-start-column="56" selection-end-line="237" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/createMainPathData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/step1_choose_center.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#47#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PathTopic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="87">
+          <caret line="393" column="65" selection-start-line="393" selection-start-column="54" selection-end-line="393" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/distance_builder_data_main_path_flower.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="176">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#149#179#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/distance/distance.py">
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step2_cluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        <state relative-caret-position="242">
+          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DensityPeakCluster/data/data_main_path/integrated_main_path_sim_length.data">
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/node_num_of_path_list.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/data/data_main_path/subgraph_list.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step1_hybrid_choose_center.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="8" column="3" lean-forward="true" selection-end-line="74" selection-end-column="30" />
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PajekUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextBasedTechRoadMap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="470" selection-start-line="470" selection-end-line="470" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/distance_builder_data_main_path_flower.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="14" column="80" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/浏览主路径的标题_摘要_多主路径_sum新方法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="50" column="76" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/plot_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="e#47#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/step2_hybrid_cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1936">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="26" />
+          <folding>
+            <element signature="e#47#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6886">
+          <caret line="317" column="42" selection-start-line="317" selection-start-column="8" selection-end-line="317" selection-end-column="42" />
+          <folding>
+            <element signature="e#47#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/distance/createMainPathData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DensityPeakCluster_SemanticMainPathAnalysis/浏览主路径的标题_摘要_多主路径_基于聚类的方法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="79" column="50" lean-forward="true" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+          <folding>
+            <element signature="e#16#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createMainPathData_4_Cluster_based_filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="72" column="40" lean-forward="true" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/浏览主路径的标题_摘要_基于聚类的主路径筛选方法.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="941" column="69" lean-forward="true" selection-start-line="941" selection-end-line="941" selection-end-column="69" />
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding>
+            <element signature="e#16#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

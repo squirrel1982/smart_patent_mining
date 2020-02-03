@@ -80,7 +80,6 @@ class TextBasedTechRoadMap:
     def getMaxWeightPathInGraph_returnGraphType_nodeWeight(self, sims):
         '''this function use node weight, which usually is the similarity between
         query text and docs in corpus, to generate query based global main path
-
         '''
         l = []
         sourceNodes = self.getSourceNodes()
@@ -346,6 +345,8 @@ class TextBasedTechRoadMap:
             terms_stemmed_bow = self.dictionary.doc2bow(terms)
             terms_stemmed_lsi = self.lsi[terms_stemmed_bow]
             sims = self.index[terms_stemmed_lsi]
+            if sims[tmp_id2]==0.0:
+                self.g[arc[0]][arc[1]]['weight'] = 0.001
             self.g[arc[0]][arc[1]]['weight'] = sims[tmp_id2]
 
     def addLSIWeight2TopologyWeight4ArcInGraph(self,texts,topology_weight=1.0,text_weight=1.0):
@@ -357,7 +358,12 @@ class TextBasedTechRoadMap:
             terms_stemmed_bow = self.dictionary.doc2bow(terms)
             terms_stemmed_lsi = self.lsi[terms_stemmed_bow]
             sims = self.index[terms_stemmed_lsi]
-            self.g[arc[0]][arc[1]]['weight'] = topology_weight*self.g[arc[0]][arc[1]]['weight']+text_weight*sims[tmp_id2]
+            # as pajek doesn't show the line with weight value of 0, here we set line weight to 0.001 if the weight value is 0
+            if topology_weight*self.g[arc[0]][arc[1]]['weight']+text_weight*sims[tmp_id2] ==0.0:
+                self.g[arc[0]][arc[1]]['weight'] = 0.001
+            else:
+                self.g[arc[0]][arc[1]]['weight'] = topology_weight*self.g[arc[0]][arc[1]]['weight']+text_weight*sims[tmp_id2]
+
             
     def setArcWeight4GrahphByLSIViaSimMatrix(self,corpus):
         arcs = self.g.edges()
@@ -422,7 +428,7 @@ class TextBasedTechRoadMap:
         return g_result
 
 
-    def queryBasedMainPath_nodeWeight_arcWeight(self,query_text,topN_graph=1,node_Weight=1.0,arc_Weight=1.0):
+    def queryBasedMainPath_nodeWeight_arcWeight(self,query_text,node_Weight=1.0,arc_Weight=1.0):
         """Create query based main path
         Args:
             query_text: query text,e.g.,"circulation cooling air temperature control"
@@ -432,14 +438,27 @@ class TextBasedTechRoadMap:
             """
         retriveResult = self.computeSimilarityByTermsAndSort(query_text)
         maxWeightPath_list = self.getMaxWeightPathInGraph_returnGraphType_nodeWeight_arcWeight(retriveResult,node_Weight,arc_Weight)
-        subgraph_list = [graph_tmp[1][1] for graph_tmp in maxWeightPath_list[:topN_graph]]
-        subgraph_list = sum(subgraph_list,[])
-        g_result = self.pu.combine_subGraphArray(subgraph_list, self.g)
-        return g_result
-    def multi_sources_globalMainPath_textSim_topology(self,spc_network_file,text_file,topology_weight,text_weight):
+
+        return maxWeightPath_list
+    def multi_sources_globalMainPath(self):
         '''
         :param spc_network_file: 'deleteLoops_spc_3603.net'
-        :param text_file: 'texts.data',it must contains all texts of the nodes,and can be more than that,but not less
+        :param corpus_file: 'corpus.data',it must contains all texts of the nodes,and can be more than that,but not less
+                          the order of texts should be consistant with that of gas
+        :param topology_weight: 1.0
+        :param text_weight: 1.0
+        :return: list containing main paths from all source nodes
+        '''
+        result = []
+        sources = self.pu.getSourceNodes(self.g)
+        for i in sources:
+            result.append(self.pu.getmulti_MaxWeightPathBySingleNode_Graph(i,self.g))
+        result.sort(cmp=lambda x, y: cmp(x[1][0], y[1][0]), reverse=True)
+        return result
+    def multi_sources_globalMainPath_textSim_topology_new_sum_method(self,spc_network_file,corpus_file,topology_weight,text_weight):
+        '''
+        :param spc_network_file: 'deleteLoops_spc_3603.net'
+        :param corpus_file: 'corpus.data',it must contains all texts of the nodes,and can be more than that,but not less
                           the order of texts should be consistant with that of gas
         :param topology_weight: 1.0
         :param text_weight: 1.0
@@ -447,12 +466,13 @@ class TextBasedTechRoadMap:
         '''
         result = []
         self.loadNetworkFromPajeknet(spc_network_file);
-        with open(text_file,'r') as f:
-            texts = pickle.load(f)
-        self.addLSIWeight2TopologyWeight4ArcInGraph(texts, topology_weight=10.0, text_weight=1.0)
+        with open(corpus_file,'r') as f:
+            corpus = pickle.load(f)
+        matrix = self.create_sim_matrix(self.lsi, corpus)
         sources = self.pu.getSourceNodes(self.g)
         for i in sources:
             # result.append(pu.getmulti_MaxWeightPathBySingleNode_Graph(i,roadMap.g,roadMap.gas,sim_matrix))
-            result.append(self.pu.getmulti_MaxWeightPathBySingleNode_Graph(i, self.g))
+            result.append(self.pu.getmulti_MaxWeightPathBySingleNode_Graph_newSumMethod_textSim_topology\
+                              (i, self.g,self.gas,matrix,semantic_weight= text_weight,topology_weight = topology_weight))
         result.sort(cmp=lambda x, y: cmp(x[1][0], y[1][0]), reverse=True)
         return result
