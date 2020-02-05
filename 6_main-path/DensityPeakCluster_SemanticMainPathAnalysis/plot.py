@@ -29,8 +29,8 @@ def plot_rho_delta(rho, delta):
             rho   : rho list
             delta : delta list
     '''
-    logger.info("PLOT: rho-delta plot")
-    plot_scatter_diagram(
+    #logger.info("PLOT: rho-delta plot")
+    plot_scatter_diagram_raw(
         0, rho[1:], delta[1:], x_label='rho', y_label='delta', title='rho-delta')
 
 
@@ -41,7 +41,7 @@ def plot_cluster(cluster,load_old_MDS = False,old_MDS_address = './mds.data'):
     Args:
             cluster : DensityPeakCluster object
     '''
-    logger.info("PLOT: cluster result, start multi-dimensional scaling")
+    #logger.info("PLOT: cluster result, start multi-dimensional scaling")
     dp = np.zeros((cluster.max_id, cluster.max_id), dtype=np.float32)
     cls = []
     for i in xrange(1, cluster.max_id):
@@ -76,11 +76,11 @@ def plot_cluster(cluster,load_old_MDS = False,old_MDS_address = './mds.data'):
                 mds = pickle.load(f)
 
     dp_mds = mds.fit_transform(dp)
-    logger.info("PLOT: end mds, start plot")
+    #logger.info("PLOT: end mds, start plot")
     plot_scatter_diagram(1, dp_mds[:, 0], dp_mds[
                          :, 1], title='cluster', style_list=cls)
 
-def plot_hybrid_cluster(cluster,load_old_MDS = False,old_MDS_address = './mds.data'):
+def plot_hybrid_cluster(cluster,index,load_old_MDS = False,old_MDS_address = './mds.data'):
     '''
     Plot scatter diagram for final points that using multi-dimensional scaling for data
 
@@ -100,7 +100,7 @@ def plot_hybrid_cluster(cluster,load_old_MDS = False,old_MDS_address = './mds.da
     fo.write('\n'.join(map(str, cls)))
     fo.close()
     if load_old_MDS == True and os.path.exists(old_MDS_address) == False:
-        logger.info("PLOT: cluster result, start multi-dimensional scaling")
+        #logger.info("PLOT: cluster result, start multi-dimensional scaling")
         version = versiontuple(sklearn_version)
 
         if version[0] > 0 or version[1] > 14:
@@ -114,9 +114,12 @@ def plot_hybrid_cluster(cluster,load_old_MDS = False,old_MDS_address = './mds.da
     elif load_old_MDS == True and os.path.exists(old_MDS_address) == True:
         with open(old_MDS_address, 'r') as f:
             dp_mds = pickle.load(f)
-    logger.info("PLOT: end mds, start plot")
-    plot_scatter_diagram(1, dp_mds[:, 0], dp_mds[
-                         :, 1], title='cluster', style_list=cls)
+    #logger.info("PLOT: end mds, start plot")
+    print index
+    for key in cluster.ccenter.keys():
+        print key,dp_mds[key-1, 0],dp_mds[key-1, 1]
+    #plot_scatter_diagram(1, dp_mds[:, 0], dp_mds[
+                         #:, 1],index, title='cluster', style_list=cls)
 
 
 if __name__ == '__main__':
@@ -127,7 +130,7 @@ if __name__ == '__main__':
     # plot_rho_delta(rho, delta)   #plot to choose the threthold
     rho, delta, nneigh = dpcluster.cluster(
         load_paperdata, './data/data_in_paper/example_distances.dat', 20, 0.1)
-    logger.info(str(len(dpcluster.ccenter)) + ' center as below')
+    #logger.info(str(len(dpcluster.ccenter)) + ' center as below')
     for idx, center in dpcluster.ccenter.items():
-        logger.info('%d %f %f' % (idx, rho[center], delta[center]))
+        pass#logger.info('%d %f %f' % (idx, rho[center], delta[center]))
     plot_cluster(dpcluster)

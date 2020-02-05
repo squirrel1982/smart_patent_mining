@@ -77,7 +77,7 @@ if __name__ == '__main__':
                                           './data/data_main_path/node_num_of_path_list.data', \
                                           './data/data_main_path/normalized_node_num_of_path_list.data', \
                                           './data/data_main_path/subgraph_list.data', \
-                                          25, 0.4,
+                                          30, 0.4,
                                           auto_select_dc=False);
 
 

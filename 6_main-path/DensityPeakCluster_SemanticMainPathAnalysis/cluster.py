@@ -7,7 +7,7 @@ import logging
 import numpy as np
 import cPickle as pickle
 
-logger = logging.getLogger("dpc_cluster")
+#logger = logging.getLogger("dpc_cluster")
 
 
 def load_paperdata(distance_f):
@@ -20,7 +20,7 @@ def load_paperdata(distance_f):
     Returns:
         distances dict, max distance, min distance, max continues id
     '''
-    logger.info("PROGRESS: load data")
+    #logger.info("PROGRESS: load data")
     distances = {}
     min_dis, max_dis = sys.float_info.max, 0.0
     max_id = 0
@@ -35,7 +35,7 @@ def load_paperdata(distance_f):
             distances[(x2, x1)] = float(d)
     for i in xrange(max_id):
         distances[(i, i)] = 0.0
-    logger.info("PROGRESS: load end")
+    #logger.info("PROGRESS: load end")
     return distances, max_dis, min_dis, max_id
 
 def load_mainPathLen(mainPathLen_f):
@@ -57,13 +57,13 @@ def select_dc(max_id, max_dis, min_dis, distances, auto=False):
     Returns:
         dc that local density threshold
     '''
-    logger.info("PROGRESS: select dc")
+    #logger.info("PROGRESS: select dc")
     if auto:
         return autoselect_dc(max_id, max_dis, min_dis, distances)
     percent = 2.0
     position = int(max_id * (max_id + 1) / 2 * percent / 100)
     dc = sorted(distances.values())[position * 2 + max_id]
-    logger.info("PROGRESS: dc - " + str(dc))
+    #logger.info("PROGRESS: dc - " + str(dc))
     return dc
 
 
@@ -111,7 +111,7 @@ def local_density(max_id, distances, dc, guass=True, cutoff=False):
         local density vector that index is the point index that start from 1
     '''
     assert guass ^ cutoff
-    logger.info("PROGRESS: compute local density")
+    #logger.info("PROGRESS: compute local density")
     guass_func = lambda dij, dc: math.exp(- (dij / dc) ** 2)
     cutoff_func = lambda dij, dc: 1 if dij < dc else 0
     func = guass and guass_func or cutoff_func
@@ -121,7 +121,7 @@ def local_density(max_id, distances, dc, guass=True, cutoff=False):
             rho[i] += func(distances[(i, j)], dc)
             rho[j] += func(distances[(i, j)], dc)
         if i % (max_id / 10) == 0:
-            logger.info("PROGRESS: at index #%i" % (i))
+            pass#logger.info("PROGRESS: at index #%i" % (i))
     return np.array(rho, np.float32)
 
 
@@ -140,7 +140,7 @@ def local_hybrid_density(max_id, distances, pathLen_list,dc, local_den_weight, p
         local density vector that index is the point index that start from 1
     '''
     assert guass ^ cutoff
-    logger.info("PROGRESS: compute local density")
+    #logger.info("PROGRESS: compute local density")
     guass_func = lambda dij, dc: math.exp(- (dij / dc) ** 2)
     cutoff_func = lambda dij, dc: 1 if dij < dc else 0
     func = guass and guass_func or cutoff_func
@@ -151,7 +151,8 @@ def local_hybrid_density(max_id, distances, pathLen_list,dc, local_den_weight, p
             rho[i] += func(distances[(i, j)], dc)
             rho[j] += func(distances[(i, j)], dc)
         if i % (max_id / 10) == 0:
-            logger.info("PROGRESS: at index #%i" % (i))
+            pass
+            #logger.info("PROGRESS: at index #%i" % (i))
     return local_den_weight*np.array(rho,np.float32)+np.array(pathLen_list,np.float32)*path_len_weight
 
 def min_distance(max_id, max_dis, distances, rho):
@@ -167,7 +168,7 @@ def min_distance(max_id, max_dis, distances, rho):
     Returns:
         min_distance vector, nearest neighbor vector
     '''
-    logger.info("PROGRESS: compute min distance to nearest higher density neigh")
+    #logger.info("PROGRESS: compute min distance to nearest higher density neigh")
     sort_rho_idx = np.argsort(-rho)
     delta, nneigh = [0.0] + [float(max_dis)] * (len(rho) - 1), [0] * len(rho)
     delta[sort_rho_idx[0]] = -1.
@@ -178,7 +179,7 @@ def min_distance(max_id, max_dis, distances, rho):
                 delta[old_i] = distances[(old_i, old_j)]
                 nneigh[old_i] = old_j
         if i % (max_id / 10) == 0:
-            logger.info("PROGRESS: at index #%i" % (i))
+            pass#logger.info("PROGRESS: at index #%i" % (i))
     delta[sort_rho_idx[0]] = max(delta)
     return np.array(delta, np.float32), np.array(nneigh, np.float32)
 
@@ -206,7 +207,7 @@ class DensityPeakCluster(object):
         rho = local_density(max_id, distances, dc)
         return distances, max_dis, min_dis, max_id, rho
 
-    def local_hybrid_density(self, data_load_func, distance_f, pathLen_load_func,pathLen_f, \
+    def local_hybrid_density(self, data_load_func, distance_f,normalized_path_len, \
                              local_den_weight=1.0, path_len_weight=1.0,dc=None, auto_select_dc=False):
         '''
         Just compute local density
@@ -222,7 +223,8 @@ class DensityPeakCluster(object):
         '''
         assert not (dc is not None and auto_select_dc)
         distances, max_dis, min_dis, max_id = data_load_func(distance_f)
-        pathLen_list = pathLen_load_func(pathLen_f)
+        with open(normalized_path_len,'r') as f:
+            pathLen_list = np.load(f).tolist()
         if dc is None:
             dc = select_dc(max_id, max_dis, min_dis,
                            distances, auto=auto_select_dc)
@@ -248,7 +250,7 @@ class DensityPeakCluster(object):
         distances, max_dis, min_dis, max_id, rho = self.local_hybrid_density(
             load_func, distance_f, dc=dc, auto_select_dc=auto_select_dc)
         delta, nneigh = min_distance(max_id, max_dis, distances, rho)
-        logger.info("PROGRESS: start cluster")
+        #logger.info("PROGRESS: start cluster")
         cluster, ccenter = {}, {}  # cl/icl in cluster_dp.m
         for idx, (ldensity, mdistance, nneigh_item) in enumerate(zip(rho, delta, nneigh)):
             if idx == 0:
@@ -264,11 +266,11 @@ class DensityPeakCluster(object):
             else:
                 cluster[idx] = -1
             if idx % (max_id / 10) == 0:
-                logger.info("PROGRESS: at index #%i" % (idx))
+                pass#logger.info("PROGRESS: at index #%i" % (idx))
         self.cluster, self.ccenter = cluster, ccenter
         self.distances = distances
         self.max_id = max_id
-        logger.info("PROGRESS: ended")
+        #logger.info("PROGRESS: ended")
         return rho, delta, nneigh
 
     def hybrid_cluster(self, data_load_func, distance_f,pathLen_load_func, pathLen_f, density_threshold, distance_threshold,\
@@ -291,7 +293,7 @@ class DensityPeakCluster(object):
         distances, max_dis, min_dis, max_id, rho = self.local_hybrid_density(
             data_load_func, distance_f,pathLen_load_func, pathLen_f,local_den_weight, path_len_weight, dc=dc, auto_select_dc=auto_select_dc)
         delta, nneigh = min_distance(max_id, max_dis, distances, rho)
-        logger.info("PROGRESS: start cluster")
+        #logger.info("PROGRESS: start cluster")
         cluster, ccenter = {}, {}  # cl/icl in cluster_dp.m
         for idx, (ldensity, mdistance, nneigh_item) in enumerate(zip(rho, delta, nneigh)):
             if idx == 0:
@@ -307,15 +309,15 @@ class DensityPeakCluster(object):
             else:
                 cluster[idx] = -1
             if idx % (max_id / 10) == 0:
-                logger.info("PROGRESS: at index #%i" % (idx))
+                pass#logger.info("PROGRESS: at index #%i" % (idx))
         self.cluster, self.ccenter = cluster, ccenter
         self.distances = distances
         self.max_id = max_id
-        logger.info("PROGRESS: ended")
+        #logger.info("PROGRESS: ended")
         return rho, delta, nneigh
 
 
-    def hybrid_cluster_onlyCenterInCluster(self, data_load_func, distance_f,pathLen_load_func, pathLen_f, density_threshold, distance_threshold,\
+    def hybrid_cluster_onlyCenterInCluster(self, data_load_func, distance_f, pathLen_f, density_threshold, distance_threshold,\
                        local_den_weight, path_len_weight,dc=None, auto_select_dc=False):
         '''
         Cluster the data
@@ -333,9 +335,9 @@ class DensityPeakCluster(object):
         '''
         assert not (dc is not None and auto_select_dc)
         distances, max_dis, min_dis, max_id, rho = self.local_hybrid_density(
-            data_load_func, distance_f,pathLen_load_func, pathLen_f,local_den_weight, path_len_weight, dc=dc, auto_select_dc=auto_select_dc)
+            data_load_func, distance_f, pathLen_f,local_den_weight, path_len_weight, dc=dc, auto_select_dc=auto_select_dc)
         delta, nneigh = min_distance(max_id, max_dis, distances, rho)
-        logger.info("PROGRESS: start cluster")
+        #logger.info("PROGRESS: start cluster")
         cluster, ccenter = {}, {}  # cl/icl in cluster_dp.m
         for idx, (ldensity, mdistance, nneigh_item) in enumerate(zip(rho, delta, nneigh)):
             if idx == 0:
@@ -351,9 +353,9 @@ class DensityPeakCluster(object):
             else:
                 cluster[idx] = -1
             if idx % (max_id / 10) == 0:
-                logger.info("PROGRESS: at index #%i" % (idx))
+                pass#logger.info("PROGRESS: at index #%i" % (idx))
         self.cluster, self.ccenter = cluster, ccenter
         self.distances = distances
         self.max_id = max_id
-        logger.info("PROGRESS: ended")
+        #logger.info("PROGRESS: ended")
         return rho, delta, nneigh

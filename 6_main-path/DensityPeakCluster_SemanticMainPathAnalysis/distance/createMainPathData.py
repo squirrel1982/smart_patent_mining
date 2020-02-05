@@ -56,9 +56,10 @@ for graph_tmp in g_result_raw:
 max_node_num = max(node_num_of_path_list)
 min_node_num = min(node_num_of_path_list)
 normalized_node_num_of_path_list = [ 1.0*(i-min_node_num)/(max_node_num-min_node_num) for i in node_num_of_path_list]
-normalized_node_num_of_path_array = np.array(normalized_node_num_of_path_list)
 
+normalized_node_num_of_path_array = np.array(normalized_node_num_of_path_list)
 path_topic_np  = np.array(path_topic_list)
+
 #integrated_path_topic_np = np.hstack((path_topic_np, normalized_node_num_of_path_np))
 
 
@@ -70,8 +71,6 @@ with open('../data/data_main_path/main_path_topic_T0_S1.data','w') as f:
 with open('../data/data_main_path/node_num_of_path_list.data','w') as f:
     pickle.dump(node_num_of_path_list,f)
 
-with open('../data/data_main_path/normalized_node_num_of_path_array.npy','w') as f:
-    np.save(f,normalized_node_num_of_path_array)
 
 with open('../data/data_main_path/subgraph_list.data','w') as f:
     pickle.dump(subgraph_list,f)
