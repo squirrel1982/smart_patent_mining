@@ -1,0 +1,2 @@
+13371_giantComponent.net这个网络还存在强连通子图，
+需要进一步去除loop，得到13371_deleteLoop_giantComponent

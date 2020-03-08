@@ -1,0 +1,27 @@
+T1	Component 0 10	Substrates
+T3	Component 155 173	computer hard disk
+T4	Component 177 191	thin-film head
+T5	Component 244 254	substrates
+T6	Component 274 296	non-oxide ceramic base
+T7	Component 320 335	smoothing layer
+T8	ScientificConcept 452 463	molar ratio
+T9	Material 467 473	carbon
+T10	Component 552 562	substrates
+T2	Component 103 143	high density magnetic storage components
+T11	Component 233 238	disks
+T12	Material 349 358	amorphous
+T13	Material 360 394	non-stoichiometric silicon carbide
+T14	Material 477 484	silicon
+T15	Component 567 577	components
+T16	Material 416 433	formula SiC.sub.x
+R1	Purpose Arg1:T1 Arg2:T2	
+#1	AnnotatorNotes R1	基底用于制造部件
+R2	MakeMove Arg1:T3 Arg2:T11	
+R3	MakeMove Arg1:T4 Arg2:T11	
+R4	Ownership Arg1:T5 Arg2:T6	
+R5	Spatial Arg1:T6 Arg2:T7	
+R6	Ownership Arg1:T7 Arg2:T13	
+R7	Attr Arg1:T9 Arg2:T8	
+R8	Comparison Arg1:T9 Arg2:T14	
+R9	isA Arg1:T3 Arg2:T2	
+R10	isA Arg1:T4 Arg2:T2	

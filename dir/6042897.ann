@@ -1,0 +1,31 @@
+T1	Component 33 79	combination read/write thin film magnetic head
+T2	Attribution 92 97	width
+T3	Component 103 112	gap layer
+T5	Component 154 178	shielding magnetic layer
+T6	Material 184 206	soft magnetic material
+T7	Component 238 247	gap layer
+T8	EnergyFlow 267 288	record magnetic field
+T9	Attribution 300 311	track width
+T10	Component 338 362	shielding magnetic layer
+T12	EnergyFlow 424 456	saturation magnetic flux density
+T13	Attribution 461 470	thickness
+T14	Component 478 502	shielding magnetic layer
+T15	Function 627 637	high level
+T16	Location 225 230	sides
+T11	Consequence 368 382	write fringing
+T17	Component 256 261	blots
+T18	ScientificConcept 604 621	reproduced output
+T19	Consequence 558 572	write fringing
+R1	Attr Arg1:T3 Arg2:T2	
+T4	Component 132 137	track
+T20	Attribution 138 143	width
+R2	Attr Arg1:T4 Arg2:T20	
+R3	Comparison Arg1:T3 Arg2:T4	
+R4	Ownership Arg1:T6 Arg2:T5	
+R5	Attr Arg1:T7 Arg2:T16	
+R6	Spatial Arg1:T16 Arg2:T5	
+R7	MakeMove Arg1:T10 Arg2:T17	
+R8	Attr Arg1:T14 Arg2:T13	
+R9	Attr Arg1:T14 Arg2:T12	
+R10	Purpose Arg1:T18 Arg2:T15	
+R11	Ownership Arg1:T8 Arg2:T17	

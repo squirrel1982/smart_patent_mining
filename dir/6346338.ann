@@ -1,0 +1,47 @@
+T1	Component 2 25	thin film magnetic head
+T2	Component 38 54	upper core layer
+T3	Component 61 77	lower core layer
+T4	Material 118 135	Fe--M--T--O alloy
+T5	Material 142 157	NI--Fe--X alloy
+T6	Component 170 186	upper core layer
+T8	Function 232 250	low coercive force
+T9	Component 281 297	lower core layer
+T10	Function 304 342	lower saturation magnetic flux density
+T13	Component 454 470	lower core layer
+T14	Component 552 561	gap layer
+T15	Component 583 599	lower core layer
+T16	Component 639 655	lower core layer
+T18	Material 99 113	Fe--M--O alloy
+T19	Function 193 230	high saturation magnetic flux density
+T7	Function 255 271	high resistivity
+T11	Component 352 368	upper core layer
+T20	Function 370 388	low coercive force
+T21	Function 390 406	high resistivity
+T22	Function 414 443	low magnetostriction constant
+T12	Attribution 493 502	thickness
+T23	Location 530 544	both side ends
+T24	Attribution 610 627	uniform thickness
+T25	Material 699 731	excellent soft magnetic material
+T17	Function 775 789	high frequency
+R1	Purpose Arg1:T16 Arg2:T25	
+R2	Purpose Arg1:T25 Arg2:T17	
+R4	Spatial Arg1:T14 Arg2:T15	
+R5	Attr Arg1:T14 Arg2:T24	
+R3	Attr Arg1:T13 Arg2:T12	
+R6	Manner Arg1:T23 Arg2:T12	
+R7	Ownership Arg1:T1 Arg2:T2	
+R8	Ownership Arg1:T1 Arg2:T3	
+R9	MadeOf Arg1:T3 Arg2:T18	
+R10	MadeOf Arg1:T3 Arg2:T4	
+R11	MadeOf Arg1:T3 Arg2:T5	
+R12	MadeOf Arg1:T2 Arg2:T18	
+R13	MadeOf Arg1:T2 Arg2:T4	
+R14	MadeOf Arg1:T2 Arg2:T5	
+R15	Attr Arg1:T6 Arg2:T19	
+R16	Attr Arg1:T6 Arg2:T8	
+R17	Attr Arg1:T6 Arg2:T7	
+R18	Attr Arg1:T9 Arg2:T10	
+R19	Comparison Arg1:T9 Arg2:T11	
+R20	Attr Arg1:T9 Arg2:T20	
+R21	Attr Arg1:T9 Arg2:T21	
+R22	Attr Arg1:T9 Arg2:T22	

@@ -1,0 +1,56 @@
+T1	Component 2 15	magnetic head
+T2	Function 26 70	enhanced recession resistance characteristic
+T3	Component 104 117	magnetic head
+T4	Function 129 173	enhanced recession resistance characteristic
+T5	Function 192 203	improvement
+T6	Component 235 257	hard protective layers
+T7	Attribution 282 302	media-head interface
+T8	Component 309 325	protective layer
+T9	Component 348 357	substrate
+T10	Shape 366 377	top closure
+T11	Component 385 398	magnetic head
+T12	Attribution 404 413	thickness
+T13	Value 444 459	0.2 micrometers
+T14	Component 520 537	protective layers
+T15	Component 565 580	hard metal film
+T16	Component 608 634	read and write transducers
+T17	Component 646 659	magnetic head
+T18	Component 665 680	hard metal film
+T19	Operation 734 753	fabrication process
+T20	Material 778 797	adjoining materials
+T21	Component 803 814	hard metals
+T22	Material 848 856	chromium
+T23	Material 858 865	iridium
+T24	Material 867 874	rhodium
+T25	Material 876 884	tantalum
+T26	Material 886 894	titanium
+T27	Material 899 907	tungsten
+T28	Attribution 466 474	hardness
+T29	Value 505 514	850 Knoop
+T30	Attribution 701 709	hardness
+T31	ScientificConcept 759 772	compatibility
+T32	ScientificConcept 711 715	ease
+R1	Attr Arg1:T1 Arg2:T2	
+T33	Component 78 84	method
+R2	Purpose Arg1:T33 Arg2:T3	
+R3	Attr Arg1:T3 Arg2:T4	
+R4	Manner Arg1:T6 Arg2:T7	
+R5	Spatial Arg1:T9 Arg2:T10	
+R7	Attr Arg1:T8 Arg2:T12	
+R6	Comparison Arg1:T12 Arg2:T13	
+R8	Comparison Arg1:T28 Arg2:T29	
+R9	Attr Arg1:T8 Arg2:T28	
+R10	Attr Arg1:T11 Arg2:T10	
+R11	Form Arg1:T15 Arg2:T14	
+R12	Ownership Arg1:T17 Arg2:T16	
+R13	Ownership Arg1:T16 Arg2:T15	
+R14	Attr Arg1:T18 Arg2:T30	
+R15	Attr Arg1:T18 Arg2:T32	
+R16	Attr Arg1:T18 Arg2:T31	
+R17	Ownership Arg1:T21 Arg2:T22	
+R18	Ownership Arg1:T21 Arg2:T23	
+R19	Ownership Arg1:T21 Arg2:T24	
+R20	Ownership Arg1:T21 Arg2:T25	
+R21	Ownership Arg1:T21 Arg2:T26	
+R22	Ownership Arg1:T21 Arg2:T27	
+R23	Ownership Arg1:T5 Arg2:T6	

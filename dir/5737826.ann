@@ -1,0 +1,27 @@
+T1	Component 2 43	thin-film head electromagnetic transducer
+T2	Component 52 63	pole pieces
+T3	Component 119 130	pole pieces
+T4	Measure 219 230	acute angle
+T5	Shape 79 82	gap
+T6	Attribution 88 95	surface
+T7	Attribution 137 148	linear edge
+T8	Location 162 166	side
+T9	Shape 174 177	gap
+T10	Attribution 190 202	linear edges
+T11	Attribution 238 249	linear edge
+T12	Shape 263 266	gap
+T13	ScientificConcept 306 310	axis
+T14	Attribution 332 343	linear edge
+T15	Shape 357 360	gap
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	MakeMove Arg1:T2 Arg2:T5	
+R3	Attr Arg1:T3 Arg2:T6	
+R4	Attr Arg1:T6 Arg2:T7	
+R5	Attr Arg1:T9 Arg2:T8	
+R6	MakeMove Arg1:T7 Arg2:T8	
+R7	Attr Arg1:T6 Arg2:T10	
+R8	MakeMove Arg1:T11 Arg2:T12	
+R9	Spatial Arg1:T10 Arg2:T11	
+R10	Spatial Arg1:T10 Arg2:T13	
+R11	Spatial Arg1:T13 Arg2:T14	
+R12	MakeMove Arg1:T14 Arg2:T15	

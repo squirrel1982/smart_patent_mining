@@ -1,0 +1,32 @@
+T1	System 2 43	thin film helical conductor coil assembly
+T2	Component 56 100	electrically-nonconducting ceramic substrate
+T3	Attribution 110 138	substantially planar surface
+T4	Component 153 187	first and second magnetic elements
+T6	Component 225 242	ceramic substrate
+T7	System 248 281	thin film conductor coil assembly
+T8	Component 298 321	thin film magnetic core
+T9	Component 355 377	first magnetic element
+T10	Component 385 408	second magnetic element
+T11	Component 414 437	thin film magnetic core
+T12	Attribution 458 486	substantially planar surface
+T13	Component 494 511	ceramic substrate
+T14	Material 535 576	compliant electroplated magnetic material
+T15	System 582 615	thin film conductor coil assembly
+T16	Component 636 672	electroplated thin film helical coil
+T17	Component 699 722	thin film magnetic core
+T18	Shape 735 750	conductive path
+T19	Location 758 772	first terminal
+T20	Location 778 793	second terminal
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	Attr Arg1:T2 Arg2:T3	
+R3	Ownership Arg1:T7 Arg2:T8	
+R4	Ownership Arg1:T15 Arg2:T16	
+R5	Ownership Arg1:T2 Arg2:T4	
+R6	Spatial Arg1:T9 Arg2:T10	
+R8	Spatial Arg1:T8 Arg2:T9	
+R7	Attr Arg1:T13 Arg2:T12	
+R9	Spatial Arg1:T11 Arg2:T12	
+R10	MadeOf Arg1:T11 Arg2:T14	
+R11	Spatial Arg1:T16 Arg2:T17	
+R12	Spatial Arg1:T19 Arg2:T20	
+R13	Form Arg1:T16 Arg2:T18	

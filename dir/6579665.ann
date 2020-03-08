@@ -1,0 +1,61 @@
+T1	Component 28 74	multi-layer lithographically fabricated device
+T3	System 151 179	focused particle beam system
+T4	Component 194 226	recording head pole-tip assembly
+T5	Component 343 360	pole-tip assembly
+T7	Component 604 650	multi-layer lithographically fabricated device
+T8	Component 688 702	marker element
+T9	ScientificConcept 709 735	fixed spatial relationship
+T11	System 942 970	focused particle beam system
+T12	System 1070 1098	focused particle beam system
+T13	Location 1180 1188	portions
+T17	Component 1455 1478	improved recording head
+T18	Function 1490 1512	higher storage density
+T2	Component 91 125	improved thin-film recording heads
+T19	System 249 268	sensitive structure
+T20	Component 277 286	read head
+T21	Component 295 309	recording head
+T22	Component 374 399	second structural element
+T23	Component 422 446	first structural element
+T24	Component 485 509	first structural element
+T25	Component 523 543	first marker element
+T6	Component 588 598	same layer
+T26	Component 658 682	first structural element
+T27	Component 743 767	first structural element
+T10	Component 790 810	first marker element
+T28	Component 819 844	second structural element
+T29	Component 885 909	first structural element
+T30	Component 918 938	first marker element
+T31	Location 989 1006	relative location
+T32	Component 1014 1050	first and second structural elements
+T33	Component 1138 1172	sensitive first structural element
+T34	Component 1196 1221	second structural element
+T14	System 1259 1287	focused particle beam system
+T35	System 1298 1323	second structural element
+T15	System 1337 1367	desired pole-tip configuration
+T16	System 1384 1414	desired pole-tip configuration
+T36	Operation 862 872	separation
+T37	Operation 1518 1538	prior art techniques
+R1	Purpose Arg1:T1 Arg2:T2	
+R2	Purpose Arg1:T3 Arg2:T4	
+R3	isA Arg1:T20 Arg2:T19	
+R4	isA Arg1:T21 Arg2:T19	
+R5	Manner Arg1:T19 Arg2:T3	
+R7	Purpose Arg1:T22 Arg2:T5	
+R6	Spatial Arg1:T25 Arg2:T6	
+R8	Purpose Arg1:T25 Arg2:T24	
+R9	Ownership Arg1:T7 Arg2:T6	
+R10	Ownership Arg1:T26 Arg2:T6	
+R11	Spatial Arg1:T8 Arg2:T27	
+R12	Ownership Arg1:T34 Arg2:T13	
+R13	Manner Arg1:T33 Arg2:T12	
+R14	Purpose Arg1:T12 Arg2:T13	
+R15	MakeMove Arg1:T14 Arg2:T35	
+R16	Purpose Arg1:T14 Arg2:T15	
+R17	Attr Arg1:T17 Arg2:T18	
+R18	Purpose Arg1:T16 Arg2:T17	
+R19	Spatial Arg1:T29 Arg2:T30	
+R20	Attr Arg1:T32 Arg2:T31	
+R21	Purpose Arg1:T11 Arg2:T31	
+R22	Purpose Arg1:T10 Arg2:T31	
+R23	Purpose Arg1:T28 Arg2:T31	
+R24	Purpose Arg1:T36 Arg2:T31	

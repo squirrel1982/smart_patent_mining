@@ -1,0 +1,29 @@
+T1	Operation 5 49	thin-film magnetic head manufacturing method
+T2	Operation 65 72	lapping
+T4	Component 111 134	magnetoresistive sensor
+T5	Value 148 170	finish tolerance range
+T6	Others 179 191	lapping time
+T7	Operation 214 221	lapping
+T8	Others 232 250	predetermined time
+T9	Operation 287 296	recession
+T10	Component 308 311	ABS
+T11	Component 317 327	slider bar
+T12	Attribution 334 341	surface
+T13	Component 347 373	thin-film magnetic element
+T14	Material 385 401	recording medium
+T15	Component 54 63	apparatus
+T16	Attribution 96 105	MR height
+T17	Operation 201 210	beginning
+R1	Attr Arg1:T4 Arg2:T16	
+R2	Measurement Arg1:T16 Arg2:T5	
+R4	Ownership Arg1:T11 Arg2:T10	
+R5	Oper Arg1:T9 Arg2:T10	
+R6	Oper Arg1:T9 Arg2:T12	
+R7	Attr Arg1:T13 Arg2:T12	
+R8	Oper Arg1:T2 Arg2:T15	
+R9	Ownership Arg1:T1 Arg2:T2	
+R3	Attr Arg1:T7 Arg2:T17	
+R10	Manner Arg1:T17 Arg2:T6	
+R11	Spatial Arg1:T13 Arg2:T14	
+#1	AnnotatorNotes T16	MR不理解，答：MR是magnetoresistive的简写，就是磁阻，电磁学专有名词
+#2	AnnotatorNotes R6	这里说的是abs和另一个表面之间的凹陷recession，注意凹陷这里应该是shape，标错了，所以这三者应该是空间关系

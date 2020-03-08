@@ -1,0 +1,52 @@
+T1	Component 57 72	optical markers
+T3	Component 347 351	bars
+T5	Component 449 462	magnetic head
+T6	Material 470 500	magnetic head surface material
+T7	EnergyFlow 621 645	desired inductive throat
+T9	Operation 699 714	Coarse grinding
+T10	Operation 801 817	grinding process
+T11	Component 840 853	magnetic head
+T12	Operation 17 40	present grinding method
+T13	Operation 87 103	photolithography
+T14	Component 161 174	magnetic head
+T2	Location 336 339	end
+T15	Attribution 521 529	end-face
+T16	Component 537 541	bars
+T17	Attribution 589 605	grinding surface
+T18	Attribution 673 682	end-faces
+T19	Operation 871 892	final lapping process
+T20	Component 118 125	markers
+T21	Component 144 151	chiplet
+T22	Component 176 183	Markers
+T23	Attribution 228 248	predetermined height
+T24	Component 217 220	bar
+T25	Attribution 250 255	width
+T26	Measure 260 266	length
+T27	ScientificConcept 303 325	predetermined distance
+T28	ScientificConcept 397 417	predetermined amount
+T29	Operation 426 441	coarse grinding
+T4	Component 649 659	MR element
+T8	Attribution 660 666	height
+T30	ScientificConcept 733 753	predetermined number
+T31	Attribution 757 766	end-faces
+R1	Manner Arg1:T13 Arg2:T1	
+R3	Ownership Arg1:T21 Arg2:T14	
+R4	Spatial Arg1:T20 Arg2:T21	
+R5	Attr Arg1:T24 Arg2:T23	
+R6	Attr Arg1:T24 Arg2:T25	
+R7	Attr Arg1:T24 Arg2:T26	
+R8	Manner Arg1:T24 Arg2:T22	
+R9	Ownership Arg1:T3 Arg2:T2	
+R10	Manner Arg1:T27 Arg2:T22	
+R11	Manner Arg1:T28 Arg2:T2	
+R12	Oper Arg1:T29 Arg2:T5	
+R13	Attr Arg1:T16 Arg2:T15	
+#1	AnnotatorNotes T6	已经被去掉了所以就跟原来的零件没有关系了吧
+R14	Spatial Arg1:T17 Arg2:T7	
+R15	Spatial Arg1:T17 Arg2:T4	
+R16	Attr Arg1:T4 Arg2:T8	
+R17	Measurement Arg1:T31 Arg2:T30	
+R18	Oper Arg1:T19 Arg2:T11	
+#2	AnnotatorNotes R17	并不是某一个单位的度量，不确定
+R21	Oper Arg1:T12 Arg2:T1	
+#3	AnnotatorNotes T9	两个oper找不到作用的对象

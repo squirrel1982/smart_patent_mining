@@ -1,0 +1,34 @@
+T1	Component 3 36	thin film magnetic recording head
+T2	System 49 75	timing based servo pattern
+T3	EnergyFlow 98 114	focused ion beam
+T4	EnergyFlow 116 119	FIB
+T5	Component 126 140	recording head
+T6	Component 171 203	magnetically permeable thin film
+T7	Component 211 220	substrate
+T8	System 224 235	gap pattern
+T9	System 250 270	timing based pattern
+T10	Component 290 299	thin film
+T11	EnergyFlow 308 311	FIB
+T12	Shape 319 322	gap
+T13	Component 335 344	thin film
+T14	Component 388 402	recording head
+T15	Component 422 433	servo track
+T16	Component 439 452	magnetic tape
+T18	Operation 503 520	precise alignment
+T19	Component 524 539	data read heads
+T20	Component 590 605	servo read head
+T23	Shape 458 482	timing based servo track
+T17	InfoFlow 553 575	positional information
+T24	Shape 635 655	variable servo track
+R1	MakeMove Arg1:T1 Arg2:T2	
+R2	Alias Arg1:T3 Arg2:T4	
+R3	Spatial Arg1:T6 Arg2:T7	
+R4	Spatial Arg1:T8 Arg2:T10	
+R5	MakeMove Arg1:T11 Arg2:T12	
+R6	Spatial Arg1:T12 Arg2:T13	
+R7	Purpose Arg1:T14 Arg2:T15	
+R8	MakeMove Arg1:T15 Arg2:T16	
+R9	Oper Arg1:T18 Arg2:T19	
+R10	MakeMove Arg1:T23 Arg2:T18	
+R11	MakeMove Arg1:T20 Arg2:T17	
+R12	MakeMove Arg1:T20 Arg2:T24	

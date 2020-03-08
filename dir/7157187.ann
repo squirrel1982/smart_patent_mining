@@ -1,0 +1,47 @@
+T1	Component 37 71	solid-state energy-storage devices
+T2	Component 82 99	fabrication films
+T3	Component 138 142	film
+T4	Component 149 170	energy-storage device
+T5	Component 201 221	first material layer
+T6	Component 241 250	substrate
+T7	EnergyFlow 252 258	Energy
+T8	Component 308 312	film
+T9	EnergyFlow 318 324	energy
+T10	Material 347 361	energized ions
+T11	Material 367 382	second material
+T13	Material 417 425	material
+T14	Component 437 441	film
+T15	Attribution 485 491	growth
+T16	Component 517 521	film
+T17	Operation 549 560	fabrication
+T18	Component 564 579	ultrathin films
+T19	Component 588 605	electrolyte films
+T20	Component 610 626	dielectric films
+T21	Component 104 111	devices
+T22	Operation 123 134	anneal step
+T23	Location 227 235	location
+T24	Operation 339 343	form
+T25	ScientificConcept 496 509	stoichiometry
+T12	EnergyFlow 394 400	energy
+T26	Material 287 295	material
+T27	System 14 20	system
+R1	Purpose Arg1:T27 Arg2:T1	
+R2	Ownership Arg1:T27 Arg2:T2	
+R3	Ownership Arg1:T4 Arg2:T3	
+R5	Ownership Arg1:T21 Arg2:T22	
+R6	MakeMove Arg1:T7 Arg2:T26	
+R7	MadeOf Arg1:T8 Arg2:T26	
+R8	Manner Arg1:T9 Arg2:T24	
+R9	Attr Arg1:T10 Arg2:T24	
+R10	Ownership Arg1:T11 Arg2:T10	
+R11	MakeMove Arg1:T12 Arg2:T13	
+R12	MakeMove Arg1:T12 Arg2:T14	
+R13	Attr Arg1:T16 Arg2:T25	
+R14	Attr Arg1:T16 Arg2:T15	
+R15	Oper Arg1:T17 Arg2:T18	
+R16	isA Arg1:T19 Arg2:T18	
+R17	isA Arg1:T20 Arg2:T18	
+R4	Attr Arg1:T6 Arg2:T23	
+R18	Spatial Arg1:T3 Arg2:T6	
+R19	Form Arg1:T5 Arg2:T3	
+#1	AnnotatorNotes R18	这块空间关系的依据？

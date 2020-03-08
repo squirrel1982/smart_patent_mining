@@ -1,0 +1,67 @@
+T1	Component 3 52	inductive pinched-gap thin film head (TFH) device
+T2	Component 60 69	pole-tips
+T3	Operation 83 102	substantial contact
+T4	Attribution 115 125	side-edges
+T5	Location 156 175	pinched-gap segment
+T6	Operation 181 200	substantial contact
+T8	EnergyFlow 262 272	flux lines
+T9	Attribution 292 297	edges
+T10	Attribution 302 309	corners
+T11	Operation 321 336	write operation
+T12	EnergyFlow 342 362	write magnetic field
+T13	Location 404 423	pinched-gap segment
+T14	Attribution 442 468	written medium track width
+T15	Attribution 498 503	width
+T16	Location 511 530	pinched-gap segment
+T17	Function 536 547	high degree
+T18	EnergyFlow 551 574	magnetization coherency
+T19	Function 579 598	virtual elimination
+T20	EnergyFlow 606 622	track-edge noise
+T21	ScientificConcept 628 667	improved (medium) signal-to-noise ratio
+T22	Function 680 700	substantial increase
+T23	EnergyFlow 708 721	track density
+T24	Operation 723 763	Photolithographic definition and etching
+T25	Shape 771 779	gap-vias
+T26	Component 787 802	bottom pole-tip
+T27	Operation 816 826	deposition
+T28	Component 834 846	top pole-tip
+T29	Operation 860 890	precise and consistent control
+T30	Attribution 898 903	width
+T31	Location 911 930	pinched-gap segment
+T32	Component 940 953	written track
+T7	Component 213 222	pole-tips
+T33	Attribution 224 234	side-edges
+T34	Value 964 979	.ltoreq.1 .mu.m
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	Attr Arg1:T7 Arg2:T33	
+R3	Spatial Arg1:T3 Arg2:T4	
+R4	Purpose Arg1:T2 Arg2:T5	
+R5	Spatial Arg1:T6 Arg2:T7	
+R6	Oper Arg1:T11 Arg2:T8	
+R7	Purpose Arg1:T6 Arg2:T8	
+R8	Spatial Arg1:T8 Arg2:T9	
+R9	Spatial Arg1:T8 Arg2:T10	
+R10	MakeMove Arg1:T12 Arg2:T13	
+R11	Attr Arg1:T16 Arg2:T15	
+R12	Oper Arg1:T19 Arg2:T20	
+R16	MakeMove Arg1:T15 Arg2:T14	
+#1	AnnotatorNotes T23	密度的显著增加 如何标注？
+R18	Attr Arg1:T31 Arg2:T30	
+R19	Oper Arg1:T27 Arg2:T28	
+R20	Oper Arg1:T29 Arg2:T30	
+R21	Attr Arg1:T32 Arg2:T30	
+R22	Measurement Arg1:T30 Arg2:T34	
+R23	Ownership Arg1:T26 Arg2:T25	
+R24	Oper Arg1:T24 Arg2:T25	
+R25	Purpose Arg1:T24 Arg2:T29	
+R26	Purpose Arg1:T27 Arg2:T29	
+#2	AnnotatorNotes R3	说的是连接的方式，即沿着边缘线将极尖连接，使用manner
+#3	AnnotatorNotes T3	接触的对象是？接触是操作，操作和操作的对象之间的关系是？
+#4	AnnotatorNotes R5	第1，操作和操作对象的关系是？第2，关系标引要遵循粒度最小原则
+#5	AnnotatorNotes R8	从edge发出的磁感线，generate关系
+#6	AnnotatorNotes R9	从拐角发出的磁感线，generate关系
+#7	AnnotatorNotes R10	磁场贯穿了pinched-gap segment，类似水流穿过闸门，电流穿过导线，实际上还是说的传播的方式，注意体会一下
+R14	Attr Arg1:T16 Arg2:T18	
+R15	Purpose Arg1:T18 Arg2:T17	
+R13	Purpose Arg1:T23 Arg2:T22	
+R17	Purpose Arg1:T21 Arg2:T23	

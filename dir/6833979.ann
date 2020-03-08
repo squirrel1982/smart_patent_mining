@@ -1,0 +1,77 @@
+T1	EnergyFlow 34 50	improved current
+T2	Component 72 104	plane thin film read head device
+T3	Operation 119 130	fabrication
+T4	Component 164 174	lower lead
+T5	Operation 196 208	accumulation
+T6	Material 212 237	redeposited lead material
+T8	Operation 278 298	CPP sensor formation
+T9	Location 333 346	upper portion
+T10	Component 354 364	lower lead
+T11	Operation 398 422	sensor element formation
+T12	Material 439 465	low sputter yield material
+T13	EnergyFlow 476 493	redeposition flux
+T14	Location 501 518	sensor side walls
+T15	Location 553 566	upper portion
+T16	Material 572 580	material
+T17	Value 597 606	low value
+T18	Attribution 615 620	ratio
+T19	ScientificConcept 628 641	sputter yield
+T20	Attribution 649 667	lead milling angle
+T21	ScientificConcept 675 688	sputter yield
+T22	Attribution 696 719	side wall milling angle
+T23	Operation 731 756	redeposition accumulation
+T24	Location 764 773	side wall
+T27	Component 954 979	low resistance lower lead
+T28	Material 985 1009	underlying lead material
+T30	Material 1091 1107	refractory metal
+T31	Material 1117 1125	tantalum
+T32	Material 1127 1135	titanium
+T33	Material 1137 1145	tungsten
+T34	Material 1147 1157	molybdenum
+T35	Material 1159 1168	zirconium
+T36	Material 1170 1178	vanadium
+T37	Material 1180 1187	niobium
+T38	Material 1210 1214	like
+T39	Component 1220 1242	improved CPP read head
+T7	Location 241 270	CPP sensor element side walls
+T41	Material 799 825	conventional lead material
+T26	Location 895 904	side wall
+T43	Operation 905 930	redeposition accumulation
+T29	Material 1027 1069	conventional low resistance lead materials
+T44	Operation 1077 1085	cladding
+T45	Material 1195 1201	alloys
+R1	Spatial Arg1:T1 Arg2:T2	
+R3	Oper Arg1:T5 Arg2:T6	
+R4	Purpose Arg1:T4 Arg2:T5	
+R2	Spatial Arg1:T6 Arg2:T7	
+R5	Ownership Arg1:T10 Arg2:T9	
+R7	MadeOf Arg1:T9 Arg2:T12	
+R8	Purpose Arg1:T9 Arg2:T13	
+R9	MakeMove Arg1:T13 Arg2:T14	
+R10	MadeOf Arg1:T15 Arg2:T16	
+R11	Attr Arg1:T15 Arg2:T17	
+R12	Attr Arg1:T19 Arg2:T18	
+R13	Purpose Arg1:T15 Arg2:T23	
+R14	Oper Arg1:T23 Arg2:T24	
+R15	Measurement Arg1:T18 Arg2:T17	
+R16	Spatial Arg1:T19 Arg2:T20	
+R17	Spatial Arg1:T21 Arg2:T22	
+R19	Oper Arg1:T43 Arg2:T26	
+T25	Material 833 882	low sputter yield ratio, low resistivity material
+R18	MakeMove Arg1:T41 Arg2:T25	
+R20	MadeOf Arg1:T28 Arg2:T29	
+R21	Oper Arg1:T44 Arg2:T30	
+R22	isA Arg1:T31 Arg2:T30	
+R24	isA Arg1:T32 Arg2:T30	
+R23	isA Arg1:T33 Arg2:T30	
+R25	isA Arg1:T34 Arg2:T30	
+R26	isA Arg1:T35 Arg2:T30	
+R27	isA Arg1:T36 Arg2:T30	
+R28	isA Arg1:T37 Arg2:T30	
+R29	isA Arg1:T45 Arg2:T30	
+R30	isA Arg1:T38 Arg2:T30	
+R33	MakeMove Arg1:T29 Arg2:T30	
+T40	Component 1289 1325	data storage and retrieval apparatus
+R31	Ownership Arg1:T40 Arg2:T39	
+R6	Oper Arg1:T8 Arg2:T4	
+R35	Oper Arg1:T11 Arg2:T9	

@@ -1,0 +1,63 @@
+T1	Component 69 76	sliders
+T2	Component 106 113	sliders
+T3	Component 118 142	thin-film magnetic heads
+T4	Component 181 208	circular-plate-shaped wafer
+T5	Component 260 267	sliders
+T6	Component 285 312	circular-plate-shaped wafer
+T7	Component 357 364	sliders
+T8	Component 424 431	sliders
+T10	Material 491 507	slider materials
+T11	Material 587 603	slider materials
+T13	Attribution 714 736	medium facing surfaces
+T15	Component 826 843	slider aggregates
+T16	Component 918 923	Rails
+T17	Attribution 958 980	medium facing surfaces
+T19	Component 1011 1028	slider aggregates
+T20	Location 241 249	sections
+T21	Location 338 346	sections
+T22	Location 380 391	orientation
+T23	Location 405 413	sections
+T9	Component 443 474	thin-film magnetic head element
+T24	Attribution 515 531	different widths
+T25	Component 553 558	wafer
+T26	Location 625 633	sections
+T27	Component 644 651	sliders
+T12	Operation 674 681	lapping
+T28	Attribution 700 707	surface
+T14	Material 767 783	slider materials
+T29	Component 909 916	sliders
+T30	Location 890 898	sections
+T31	Material 789 798	materials
+T32	Attribution 940 947	surface
+T18	Component 988 1005	slider aggregates
+T33	Operation 44 54	processing
+T34	Operation 653 663	Processing
+R1	Attr Arg1:T18 Arg2:T17	
+R2	Spatial Arg1:T16 Arg2:T32	
+R3	isA Arg1:T32 Arg2:T17	
+R4	MadeOf Arg1:T15 Arg2:T31	
+R5	Attr Arg1:T10 Arg2:T24	
+R6	Form Arg1:T30 Arg2:T29	
+R7	Ownership Arg1:T15 Arg2:T30	
+R8	Ownership Arg1:T34 Arg2:T12	
+R9	isA Arg1:T28 Arg2:T13	
+R10	Attr Arg1:T14 Arg2:T13	
+R11	Manner Arg1:T28 Arg2:T12	
+R12	Ownership Arg1:T11 Arg2:T26	
+R13	Form Arg1:T26 Arg2:T27	
+R14	Ownership Arg1:T25 Arg2:T10	
+R15	Form Arg1:T23 Arg2:T8	
+R16	Ownership Arg1:T23 Arg2:T9	
+R17	Form Arg1:T21 Arg2:T7	
+R18	Manner Arg1:T22 Arg2:T7	
+R19	Ownership Arg1:T6 Arg2:T21	
+R20	Form Arg1:T20 Arg2:T5	
+R21	Purpose Arg1:T2 Arg2:T3	
+R22	MakeMove Arg1:T4 Arg2:T2	
+R23	Purpose Arg1:T2 Arg2:T33	
+R24	Purpose Arg1:T2 Arg2:T1	
+R25	Ownership Arg1:T4 Arg2:T20	
+#1	AnnotatorNotes R25	漏标了，in which 表明包含关系
+#2	AnnotatorNotes R11	perform的逻辑主语是processing
+#3	AnnotatorNotes R9	A充当B，应该用Form，注意看讲义1，form与isA的区别
+#4	AnnotatorNotes R3	form

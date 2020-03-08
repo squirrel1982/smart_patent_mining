@@ -1,0 +1,57 @@
+T1	Component 34 57	thin film magnetic head
+T3	Component 107 124	neighboring track
+T4	Material 166 182	recording medium
+T5	Component 204 228	main magnetic pole layer
+T6	Attribution 252 258	height
+T7	Attribution 264 283	widened end surface
+T8	Component 289 319	lower main magnetic pole layer
+T9	Location 333 345	wide portion
+T10	Attribution 362 368	height
+T11	Attribution 375 390	exposed surface
+T12	Component 397 427	upper main magnetic pole layer
+T13	Location 429 446	front end portion
+T14	Location 461 482	uniform width portion
+T15	Location 494 498	area
+T16	Attribution 506 525	widened end surface
+T17	Location 558 562	area
+T18	Attribution 570 585	exposed surface
+T20	Component 637 667	lower main magnetic pole layer
+T21	Attribution 752 758	height
+T22	Attribution 766 785	widened end surface
+T23	Attribution 802 808	height
+T24	Attribution 816 831	exposed surface
+T25	EnergyFlow 863 876	magnetic flux
+T26	Component 892 922	lower main magnetic pole layer
+T28	Component 964 994	upper main magnetic pole layer
+T29	Location 996 1013	front end portion
+T30	Material 1026 1042	recording medium
+T2	EnergyFlow 608 621	magnetic flux
+T19	InfoFlow 693 714	recording information
+T27	Attribution 932 951	widened end surface
+T31	Operation 833 855	unintentional emission
+T32	Operation 81 101	unintentional wiring
+R1	Oper Arg1:T32 Arg2:T1	
+R2	Spatial Arg1:T1 Arg2:T3	
+R3	Attr Arg1:T16 Arg2:T15	
+R4	Attr Arg1:T18 Arg2:T17	
+R5	Attr Arg1:T22 Arg2:T21	
+R6	Attr Arg1:T24 Arg2:T23	
+R7	Attr Arg1:T7 Arg2:T6	
+R8	Attr Arg1:T11 Arg2:T10	
+R9	Spatial Arg1:T7 Arg2:T8	
+R10	Spatial Arg1:T11 Arg2:T12	
+R11	Ownership Arg1:T12 Arg2:T13	
+R12	Comparison Arg1:T6 Arg2:T10	
+R13	Ownership Arg1:T7 Arg2:T9	
+R14	Ownership Arg1:T11 Arg2:T14	
+R15	Comparison Arg1:T15 Arg2:T17	
+R16	Comparison Arg1:T21 Arg2:T23	
+R17	Manner Arg1:T20 Arg2:T2	
+R18	Manner Arg1:T26 Arg2:T25	
+R19	Ownership Arg1:T28 Arg2:T29	
+R20	Spatial Arg1:T28 Arg2:T30	
+R21	Oper Arg1:T31 Arg2:T25	
+R23	Manner Arg1:T28 Arg2:T25	
+R22	Attr Arg1:T26 Arg2:T27	
+#1	AnnotatorNotes R1	这个句子显然符合（A do B to C，A/B/C均是事物）这种模式，按照讲义二第六条来标引
+#2	AnnotatorNotes R9	标attr或者ownership均可

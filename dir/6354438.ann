@@ -1,0 +1,55 @@
+T1	System 28 74	multi-layer lithographically fabricated device
+T3	System 151 179	focused particle beam system
+T4	Component 194 226	recording head pole-tip assembly
+T5	Component 343 360	pole-tip assembly
+T7	System 604 650	multi-layer lithographically fabricated device
+T8	Component 688 702	marker element
+T11	System 942 970	focused particle beam system
+T12	System 1070 1098	focused particle beam system
+T17	Component 1455 1478	improved recording head
+T18	Function 1490 1512	higher storage density
+T19	Component 91 125	improved thin-film recording heads
+T2	System 249 268	sensitive structure
+T20	Component 277 286	read head
+T21	Component 295 309	recording head
+T22	Component 374 399	second structural element
+T23	Component 422 446	first structural element
+T24	Component 485 509	first structural element
+T25	Component 523 543	first marker element
+T6	Component 658 682	first structural element
+T26	Component 743 767	first structural element
+T27	Component 790 810	first marker element
+T10	Component 819 844	second structural element
+T28	Operation 862 872	separation
+T29	Component 885 909	first structural element
+T30	Component 918 938	first marker element
+T31	Location 989 1006	relative location
+T32	Component 1014 1050	first and second structural elements
+T33	Component 1138 1172	sensitive first structural element
+T13	Component 1196 1221	second structural element
+T14	System 1259 1287	focused particle beam system
+T34	Component 1298 1323	second structural element
+T35	System 1337 1367	desired pole-tip configuration
+T15	System 1384 1414	desired pole-tip configuration
+R1	Purpose Arg1:T1 Arg2:T19	
+R2	MakeMove Arg1:T3 Arg2:T4	
+R3	Ownership Arg1:T21 Arg2:T20	
+R4	isA Arg1:T20 Arg2:T3	
+R5	Purpose Arg1:T22 Arg2:T5	
+R6	Purpose Arg1:T25 Arg2:T24	
+R7	Spatial Arg1:T8 Arg2:T26	
+R8	Comparison Arg1:T7 Arg2:T6	
+R9	Ownership Arg1:T7 Arg2:T25	
+R10	Spatial Arg1:T29 Arg2:T30	
+R11	Oper Arg1:T28 Arg2:T29	
+R12	Oper Arg1:T28 Arg2:T30	
+R13	Attr Arg1:T32 Arg2:T31	
+R14	Purpose Arg1:T11 Arg2:T31	
+R15	Purpose Arg1:T12 Arg2:T13	
+R16	MakeMove Arg1:T14 Arg2:T34	
+R17	Purpose Arg1:T14 Arg2:T35	
+R18	Attr Arg1:T17 Arg2:T18	
+R19	Purpose Arg1:T15 Arg2:T18	
+#1	AnnotatorNotes R4	实际上read head是针对sensitive structure（敏感结构）举例子
+#2	AnnotatorNotes R5	使用makemove，参照讲义6第2条
+#3	AnnotatorNotes R1	总体来说标引得不错

@@ -1,0 +1,80 @@
+T1	Component 2 50	low-noise toroidal thin film head (""TFH")) device
+T2	Function 55 89	low coil resistance and inductance
+T3	Function 115 183	very high magnetic recording areal densities and channel frequencies
+T4	Measure 189 195	length
+T5	Component 201 219	toroidal coil turn
+T6	Value 234 240	20-30 %
+T7	Measure 253 259	length
+T8	Component 266 278	average turn
+T9	Operation 286 324	conventional planar spiral coil design
+T11	ScientificConcept 345 354	reduction
+T12	ScientificConcept 362 382	device thermal noise
+T13	Value 387 397	about 6 dB
+T14	ScientificConcept 406 414	increase
+T15	ScientificConcept 422 460	device operational frequency bandwidth
+T17	Value 477 481	3-5)
+T18	ScientificConcept 487 520	toroidal coil coupling efficiency
+T19	Component 547 560	magnetic core
+T20	ScientificConcept 604 636	write and read-back efficiencies
+T21	Location 658 697	non-via large back-closure contact area
+T22	EnergyFlow 722 751	bottom and top magnetic poles
+T23	Location 820 830	loose ends
+T24	EnergyFlow 838 854	magnetic circuit
+T25	Component 875 888	magnetic core
+T26	Shape 895 943	gradual, smooth toroidal (or a horse-shoe) shape
+T27	Location 952 962	loose ends
+T28	Shape 964 969	nooks
+T29	Shape 971 979	crevices
+T30	Shape 984 997	sharp corners
+T31	Location 1003 1035	larger back-closure contact area
+T32	EnergyFlow 1050 1074	magnetic core reluctance
+T33	ScientificConcept 1092 1109	device efficiency
+T34	Component 1128 1156	soft non-magnetic seed-layer
+T35	Material 1166 1170	gold
+T36	ScientificConcept 1183 1201	interference noise
+T37	Component 1213 1252	conventional magnetic (NiFe) seed-layer
+T39	Component 1302 1312	seed-layer
+T40	ScientificConcept 1323 1341	intended easy axis
+T42	EnergyFlow 1412 1433	plated magnetic poles
+T43	Function 1465 1486	significant reduction
+T44	ScientificConcept 1490 1500	Barkhausen
+T45	ScientificConcept 1522 1534	device noise
+T50	Component 2 50	low-noise toroidal thin film head ("TFH") device
+T51	Value 234 240	20-30%
+T10	Component 534 538	turn
+T16	Value 576 580	100%
+T52	Attribution 764 786	entire back-side width
+T38	Operation 1254 1294	Slight mechanical texturing (scratching)
+T46	Component 1556 1572	conventional TFH
+T47	Component 1576 1586	Planar TFH
+T48	Component 1590 1605	Pinched-Gap TFH
+T49	Component 1633 1658	Magnetoresistive (MR) TFH
+R1	Purpose Arg1:T50 Arg2:T2	
+R2	Purpose Arg1:T50 Arg2:T3	
+R3	Attr Arg1:T5 Arg2:T4	
+R4	Attr Arg1:T8 Arg2:T7	
+R5	Oper Arg1:T9 Arg2:T8	
+R6	Measurement Arg1:T4 Arg2:T51	
+R7	Oper Arg1:T11 Arg2:T12	
+R8	Measurement Arg1:T12 Arg2:T13	
+R9	Oper Arg1:T14 Arg2:T15	
+R10	Measurement Arg1:T15 Arg2:T17	
+R11	Purpose Arg1:T18 Arg2:T20	
+R12	Measurement Arg1:T18 Arg2:T16	
+R13	Attr Arg1:T10 Arg2:T18	
+R14	Attr Arg1:T19 Arg2:T18	
+R15	Spatial Arg1:T21 Arg2:T22	
+R16	Spatial Arg1:T22 Arg2:T52	
+R17	Ownership Arg1:T24 Arg2:T23	
+R18	Attr Arg1:T25 Arg2:T26	
+R19	Purpose Arg1:T31 Arg2:T32	
+R20	Purpose Arg1:T31 Arg2:T33	
+R21	isA Arg1:T35 Arg2:T34	
+R22	MakeMove Arg1:T34 Arg2:T36	
+R23	Oper Arg1:T38 Arg2:T39	
+R24	Spatial Arg1:T39 Arg2:T40	
+T41	EnergyFlow 1369 1404	strong magnetic uniaxial anisotropy
+R25	MakeMove Arg1:T38 Arg2:T41	
+R26	MakeMove Arg1:T41 Arg2:T42	
+R27	Oper Arg1:T43 Arg2:T44	
+R28	Oper Arg1:T43 Arg2:T45	

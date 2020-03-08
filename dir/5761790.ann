@@ -1,0 +1,69 @@
+T1	Component 2 28	composite thin film slider
+T2	Component 36 57	protruding R/W device
+T3	Operation 68 97	chemical-mechanical polishing
+T4	Component 120 129	substrate
+T5	Measure 153 161	distance
+T6	Component 174 184	R/W device
+T7	Material 193 208	recording media
+T8	Component 214 220	slider
+T10	Component 243 264	non-ceramic substrate
+T11	Attribution 272 308	substantially planar bearing surface
+T12	Component 316 326	R/W device
+T13	Component 332 342	R/W device
+T14	Component 355 364	insulator
+T15	Component 423 433	substrate'
+T16	Location 435 446	deposit end
+T17	Component 452 466	R/W components
+T18	Component 495 516	magnetic shield layer
+T19	Component 520 535	MR stripe layer
+T20	Component 543 566	magnetic pole tip layer
+T21	Location 589 600	deposit end
+T22	Component 608 617	substrate
+T23	Component 623 637	R/W components
+T24	Component 656 665	insulator
+T25	Component 698 725	substrate's bearing surface
+T26	Component 747 753	slider
+T27	Component 757 766	substrate
+T28	Component 776 786	R/W device
+T30	Component 871 880	substrate
+T31	Component 885 894	insulator
+T32	Component 915 929	R/W components
+T33	Component 935 949	R/W components
+T34	Component 978 987	insulator
+T36	Material 232 239	ceramic
+T9	Component 369 402	certain conductive R/W components
+T37	PhysicsFlow 824 838	lapping slurry
+T29	Attribution 1016 1031	bearing surface
+T35	Component 996 1013	ceramic substrate
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	Oper Arg1:T3 Arg2:T2	
+R5	Spatial Arg1:T6 Arg2:T7	
+R6	Ownership Arg1:T8 Arg2:T36	
+R7	Ownership Arg1:T8 Arg2:T10	
+R8	Ownership Arg1:T10 Arg2:T11	
+R9	Ownership Arg1:T10 Arg2:T12	
+R10	Ownership Arg1:T13 Arg2:T14	
+R11	Ownership Arg1:T13 Arg2:T9	
+R12	Attr Arg1:T15 Arg2:T16	
+R13	Spatial Arg1:T14 Arg2:T16	
+R14	Spatial Arg1:T9 Arg2:T16	
+R15	Ownership Arg1:T17 Arg2:T18	
+R16	Ownership Arg1:T17 Arg2:T19	
+R17	Ownership Arg1:T17 Arg2:T20	
+R18	Attr Arg1:T22 Arg2:T21	
+R19	Spatial Arg1:T18 Arg2:T21	
+R20	Spatial Arg1:T19 Arg2:T21	
+R21	Spatial Arg1:T20 Arg2:T21	
+R22	Spatial Arg1:T23 Arg2:T24	
+R23	Spatial Arg1:T23 Arg2:T25	
+R24	Ownership Arg1:T27 Arg2:T28	
+R25	Spatial Arg1:T33 Arg2:T34	
+R26	Attr Arg1:T35 Arg2:T29	
+R27	Spatial Arg1:T33 Arg2:T29	
+R28	MakeMove Arg1:T37 Arg2:T27	
+R29	MakeMove Arg1:T37 Arg2:T30	
+R30	MakeMove Arg1:T37 Arg2:T31	
+R3	Spatial Arg1:T2 Arg2:T4	
+R4	Purpose Arg1:T2 Arg2:T5	
+#1	AnnotatorNotes R13	标引时候要遵循粒度最小化，原来标在substrate上面，我直接改了
+#2	AnnotatorNotes R14	标引时候要遵循粒度最小化，原来标在substrate上面，我直接改了

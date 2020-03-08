@@ -1,0 +1,39 @@
+T3	EnergyFlow 132 161	relatively low surface energy
+T5	Material 303 309	copper
+T7	Material 329 336	alumina
+T8	Material 341 345	NiFe
+T10	ScientificConcept 455 467	removal rate
+T11	PhysicsFlow 507 517	CMP slurry
+T13	Material 548 556	abrasive
+T14	PhysicsFlow 580 590	CMP slurry
+T15	Attribution 609 616	surface
+T16	System 624 634	structures
+T18	Attribution 61 71	smoothness
+T1	System 74 124	thin film magnetic head hardbaked resist structure
+T2	System 178 223	additional thin film magnetic head structures
+T19	Material 241 250	materials
+T4	EnergyFlow 258 293	comparatively higher surface energy
+T6	PhysicsFlow 311 327	hardbaked resist
+T20	Operation 370 381	preparation
+T21	Material 475 484	materials
+T12	PhysicsFlow 529 543	liquid vehicle
+T22	PhysicsFlow 564 574	surfactant
+T9	PhysicsFlow 387 429	chemical mechanical polishing (CMP) slurry
+T23	System 660 670	structures
+T17	Operation 709 736	CMP planarization technique
+R1	Ownership Arg1:T1 Arg2:T3	
+R2	Ownership Arg1:T2 Arg2:T19	
+R3	Ownership Arg1:T19 Arg2:T4	
+R7	Ownership Arg1:T11 Arg2:T12	
+R8	Ownership Arg1:T11 Arg2:T13	
+R9	Ownership Arg1:T11 Arg2:T22	
+R10	MakeMove Arg1:T14 Arg2:T15	
+R11	Attr Arg1:T15 Arg2:T16	
+R12	Purpose Arg1:T17 Arg2:T23	
+R13	Attr Arg1:T18 Arg2:T1	
+R4	isA Arg1:T5 Arg2:T19	
+R14	isA Arg1:T6 Arg2:T19	
+R15	isA Arg1:T7 Arg2:T19	
+R16	isA Arg1:T8 Arg2:T19	
+R5	Oper Arg1:T20 Arg2:T9	
+R6	Attr Arg1:T21 Arg2:T10	

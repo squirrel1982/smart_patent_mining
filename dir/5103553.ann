@@ -1,0 +1,39 @@
+T1	Component 4 8	head
+T2	Component 20 29	read pole
+T3	Component 57 68	write poles
+T4	Shape 92 95	gap
+T5	Component 114 123	read pole
+T6	EnergyFlow 133 137	flux
+T7	Component 143 154	flux sensor
+T8	Shape 185 188	gap
+T9	Component 194 198	head
+T10	Function 224 264	longitudinal and perpendicular recording
+T11	Function 273 290	readback function
+T12	Component 316 330	inductive coil
+T13	System 334 354	flux sensing devices
+T14	Component 365 376	Hall sensor
+T15	Component 383 392	MR sensor
+T16	Component 398 412	recording head
+T17	Function 422 446	high readback resolution
+T18	Function 448 474	high write field gradients
+T19	ScientificConcept 484 494	capability
+T20	Component 499 521	write wide-read narrow
+T21	Component 527 536	read pole
+T22	Component 541 552	write poles
+T23	System 557 577	laminated structures
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	Spatial Arg1:T2 Arg2:T3	
+R3	Form Arg1:T2 Arg2:T4	
+R4	MakeMove Arg1:T5 Arg2:T6	
+R5	MakeMove Arg1:T6 Arg2:T7	
+R6	Purpose Arg1:T16 Arg2:T17	
+R7	Purpose Arg1:T16 Arg2:T18	
+R8	isA Arg1:T22 Arg2:T23	
+R9	isA Arg1:T21 Arg2:T23	
+R10	Purpose Arg1:T9 Arg2:T10	
+R11	MakeMove Arg1:T12 Arg2:T11	
+R12	MakeMove Arg1:T13 Arg2:T11	
+R13	isA Arg1:T14 Arg2:T13	
+R14	isA Arg1:T15 Arg2:T13	
+R15	Attr Arg1:T20 Arg2:T19	
+R16	Purpose Arg1:T16 Arg2:T19	

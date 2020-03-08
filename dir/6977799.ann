@@ -1,0 +1,68 @@
+T1	Component 33 46	magnetic head
+T2	Function 54 78	improved characteristics
+T3	Component 88 111	magnetoresistive device
+T4	EnergyFlow 121 128	current
+T5	Attribution 146 156	film plane
+T6	System 167 177	TMR device
+T7	Component 184 203	first magnetic head
+T8	Location 239 243	area
+T9	Component 249 267	non-magnetic layer
+T10	Location 284 309	device cross-section area
+T11	Location 319 323	area
+T12	Component 329 333	yoke
+T13	Location 350 359	yoke area
+T14	Location 378 387	direction
+T15	Attribution 409 416	surface
+T16	Component 424 433	substrate
+T17	Component 449 453	yoke
+T18	Component 462 485	magnetoresistive device
+T19	Location 507 532	device cross-section area
+T20	Location 561 570	yoke area
+T21	Operation 582 601	resistance increase
+T22	Location 609 634	device cross-section area
+T23	Component 655 675	second magnetic head
+T24	Component 704 727	magnetoresistive device
+T25	Component 743 752	substrate
+T26	Component 760 764	yoke
+T27	Component 785 803	non-magnetic layer
+T28	Component 821 827	device
+T29	Component 834 853	third magnetic head
+T30	Component 884 894	free layer
+T31	Component 902 925	magnetoresistive device
+T32	Component 948 962	magnetic films
+T33	Component 980 997	non-magnetic film
+T34	Attribution 1038 1047	thickness
+T35	Component 1055 1073	non-magnetic layer
+T36	Value 1091 1095	2 nm
+T37	Value 1114 1119	10 nm
+T38	Operation 1125 1147	magnetostatic coupling
+T39	Component 1166 1186	fourth magnetic head
+T40	Shape 1215 1227	magnetic gap
+T41	Component 1256 1279	magnetoresistive device
+T42	Component 1288 1302	magnetic films
+T43	Value 550 553	30%
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	MakeMove Arg1:T1 Arg2:T3	
+R3	Spatial Arg1:T4 Arg2:T5	
+R4	Attr Arg1:T6 Arg2:T5	
+R5	MakeMove Arg1:T8 Arg2:T10	
+R6	Ownership Arg1:T9 Arg2:T8	
+R7	Ownership Arg1:T12 Arg2:T11	
+R8	MakeMove Arg1:T11 Arg2:T13	
+R9	Manner Arg1:T14 Arg2:T15	
+R10	Attr Arg1:T16 Arg2:T15	
+R11	Spatial Arg1:T17 Arg2:T16	
+R12	Spatial Arg1:T18 Arg2:T16	
+R13	Measurement Arg1:T19 Arg2:T43	
+R14	Comparison Arg1:T20 Arg2:T19	
+R15	Oper Arg1:T21 Arg2:T22	
+R16	Spatial Arg1:T24 Arg2:T25	
+R17	Spatial Arg1:T26 Arg2:T27	
+R18	MakeMove Arg1:T27 Arg2:T28	
+R19	Ownership Arg1:T31 Arg2:T30	
+R20	Ownership Arg1:T30 Arg2:T32	
+R21	Ownership Arg1:T30 Arg2:T33	
+R22	Attr Arg1:T35 Arg2:T34	
+R23	Measurement Arg1:T34 Arg2:T36	
+R24	Measurement Arg1:T34 Arg2:T37	
+R25	Spatial Arg1:T40 Arg2:T41	

@@ -1,0 +1,23 @@
+T3	Component 99 112	head assembly
+T4	Component 224 237	head assembly
+T5	Component 277 287	hard block
+T6	Component 329 342	head assembly
+T7	System 476 489	head assembly
+T1	System 2 61	bidirectional thin-film magnetoresistive tape head assembly
+T2	Operation 87 91	wear
+T8	Component 157 170	read elements
+T9	Component 192 206	write elements
+T10	Material 243 257	hard materials
+T11	Component 300 323	read and write elements
+T12	Component 370 393	read and write elements
+T13	Component 398 408	data track
+T14	Operation 504 525	reading-while-writing
+T15	Component 533 537	tape
+T16	Location 546 556	directions
+R1	Spatial Arg1:T5 Arg2:T11	
+R2	Ownership Arg1:T8 Arg2:T9	
+R3	MadeOf Arg1:T4 Arg2:T10	
+R5	MakeMove Arg1:T6 Arg2:T12	
+R6	Oper Arg1:T14 Arg2:T7	
+R7	Spatial Arg1:T7 Arg2:T15	
+R8	Manner Arg1:T16 Arg2:T7	

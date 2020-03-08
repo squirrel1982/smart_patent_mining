@@ -1,0 +1,50 @@
+T1	EnergyFlow 3 23	write driver circuit
+T2	Component 35 53	first write driver
+T4	Component 95 105	write head
+T7	Component 184 202	first write driver
+T9	EnergyFlow 239 255	first resistance
+T10	Operation 278 284	output
+T11	Component 292 310	first write driver
+T12	Component 340 358	first write driver
+T13	Component 362 381	second write driver
+T14	Shape 402 413	second node
+T15	Component 421 431	write head
+T18	Operation 497 503	output
+T19	Component 511 530	second write driver
+T21	EnergyFlow 568 585	second resistance
+T22	Operation 608 614	output
+T23	Component 622 641	second write driver
+T24	Component 671 690	second write driver
+T3	EnergyFlow 109 128	first feedback path
+T5	Operation 149 162	control input
+T6	Operation 170 176	output
+T8	EnergyFlow 208 227	first feedback path
+T25	Operation 319 332	control input
+T26	Shape 79 89	first node
+T17	Operation 476 489	control input
+T16	EnergyFlow 435 455	second feedback path
+T20	EnergyFlow 536 556	second feedback path
+T27	Operation 650 663	control input
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	Ownership Arg1:T4 Arg2:T26	
+R3	MakeMove Arg1:T2 Arg2:T26	
+R4	MakeMove Arg1:T3 Arg2:T5	
+R5	MakeMove Arg1:T3 Arg2:T6	
+R6	Ownership Arg1:T7 Arg2:T6	
+R7	Ownership Arg1:T7 Arg2:T5	
+R8	Ownership Arg1:T8 Arg2:T9	
+R9	Ownership Arg1:T11 Arg2:T10	
+R10	Ownership Arg1:T12 Arg2:T25	
+R11	Spatial Arg1:T9 Arg2:T10	
+R12	Spatial Arg1:T9 Arg2:T25	
+R13	MakeMove Arg1:T13 Arg2:T14	
+R14	Ownership Arg1:T15 Arg2:T14	
+R15	MakeMove Arg1:T16 Arg2:T17	
+R16	MakeMove Arg1:T16 Arg2:T18	
+R17	Ownership Arg1:T19 Arg2:T18	
+R18	Ownership Arg1:T19 Arg2:T17	
+R19	Ownership Arg1:T20 Arg2:T21	
+R20	Ownership Arg1:T23 Arg2:T22	
+R21	Ownership Arg1:T24 Arg2:T27	
+R22	Spatial Arg1:T21 Arg2:T22	
+R23	Spatial Arg1:T21 Arg2:T27	

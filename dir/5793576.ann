@@ -1,0 +1,44 @@
+T1	System 2 19	disk drive system
+T2	Component 29 57	magnetoresistive (MR) sensor
+T3	Component 70 75	leads
+T4	Component 81 86	leads
+T5	EnergyFlow 101 114	sense current
+T6	Component 121 129	MR layer
+T7	Component 138 143	leads
+T8	EnergyFlow 158 165	current
+T9	Component 171 190	soft adjacent layer
+T10	Component 192 195	SAL
+T11	Component 202 210	MR layer
+T12	Component 226 242	hard bias layers
+T13	Component 279 282	SAL
+T14	Component 289 298	insulator
+T15	EnergyFlow 304 312	voltages
+T16	Component 334 342	MR layer
+T17	EnergyFlow 376 394	thermal asperities
+T18	EnergyFlow 399 407	voltages
+T19	InfoFlow 431 442	data fields
+T20	Component 452 455	SAL
+T21	EnergyFlow 489 507	thermal asperities
+T22	Component 540 562	differential amplifier
+T23	Function 567 590	substantial elimination
+T24	InfoFlow 598 621	thermal asperity signal
+T25	EnergyFlow 344 352	voltages
+T26	EnergyFlow 457 465	voltages
+T27	Operation 528 534	inputs
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	Ownership Arg1:T2 Arg2:T3	
+R3	Purpose Arg1:T4 Arg2:T5	
+R4	Oper Arg1:T5 Arg2:T6	
+R5	Purpose Arg1:T7 Arg2:T8	
+R6	Oper Arg1:T8 Arg2:T9	
+R7	Alias Arg1:T9 Arg2:T10	
+R8	Purpose Arg1:T15 Arg2:T27	
+R9	Oper Arg1:T22 Arg2:T27	
+R10	Attr Arg1:T24 Arg2:T23	
+R11	Generate Arg1:T17 Arg2:T25	
+R12	Generate Arg1:T19 Arg2:T18	
+R13	Spatial Arg1:T15 Arg2:T16	
+R14	Generate Arg1:T21 Arg2:T26	
+R15	Spatial Arg1:T15 Arg2:T20	
+R16	Purpose Arg1:T15 Arg2:T23	
+#1	AnnotatorNotes R16	XX用于...以便...  是两个purpose关系么？

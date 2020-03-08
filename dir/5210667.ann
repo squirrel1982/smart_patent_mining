@@ -1,0 +1,44 @@
+T1	Component 2 25	thin film magnetic head
+T2	Component 54 68	thin film head
+T3	Component 83 108	electrical lapping guides
+T4	Component 131 154	resistive lapping guide
+T5	EnergyFlow 190 211	electrical resistance
+T6	Component 264 287	resistive lapping guide
+T7	Component 321 344	resistive lapping guide
+T8	Component 391 413	finished lapping guide
+T9	Component 520 535	as-lapped guide
+T10	Component 575 597	finished lapping guide
+T11	Component 637 662	interleaved magnetic head
+T13	EnergyFlow 782 792	resistance
+T14	Component 800 822	lapping guide elements
+T15	EnergyFlow 860 876	final resistance
+T16	Component 884 906	finished lapping guide
+T17	Attribution 166 182	height dimension
+T18	Component 293 315	finished lapping guide
+T19	Operation 370 385	lapping process
+T20	Operation 500 515	lapping process
+T21	Attribution 552 567	same dimensions
+T12	Component 670 713	alternating magneto-resistive read elements
+T22	Component 718 742	inductive write elements
+T23	ScientificConcept 835 842	formula
+T24	Operation 919 934	lapping process
+T25	Operation 432 452	resistive comparison
+T26	Operation 246 256	comparison
+T27	Operation 484 492	stopping
+R1	MakeMove Arg1:T3 Arg2:T2	
+R2	Attr Arg1:T4 Arg2:T17	
+R3	Attr Arg1:T4 Arg2:T5	
+R4	Oper Arg1:T26 Arg2:T6	
+R5	Oper Arg1:T26 Arg2:T18	
+R6	Oper Arg1:T27 Arg2:T20	
+R7	Attr Arg1:T9 Arg2:T21	
+R8	Ownership Arg1:T11 Arg2:T12	
+R9	Ownership Arg1:T11 Arg2:T22	
+R10	Attr Arg1:T14 Arg2:T13	
+R11	MakeMove Arg1:T11 Arg2:T13	
+R12	Attr Arg1:T16 Arg2:T15	
+R13	MakeMove Arg1:T11 Arg2:T23	
+R14	MakeMove Arg1:T23 Arg2:T15	
+R15	MakeMove Arg1:T15 Arg2:T24	
+R16	Purpose Arg1:T25 Arg2:T27	
+#1	AnnotatorNotes R16	...操作决定了... 用purpose是否合适？

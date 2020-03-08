@@ -1,0 +1,62 @@
+T1	Component 34 63	improved thin film write head
+T2	Component 114 130	ultra-short yoke
+T3	System 141 174	ultra-low conductor winding stack
+T4	Attribution 206 217	yoke length
+T5	Attribution 222 234	stack height
+T6	Component 250 267	conductor winding
+T7	Shape 273 279	trench
+T8	Component 295 311	insulation layer
+T9	Material 337 366	inorganic insulation material
+T10	Component 370 386	thin resist mask
+T11	Attribution 409 414	width
+T12	Shape 422 428	trench
+T13	Operation 439 451	etch process
+T14	Attribution 464 469	depth
+T15	Component 487 503	insulation layer
+T16	Operation 574 586	etch process
+T17	Component 598 615	conductor winding
+T18	Component 637 653	underlying layer
+T19	Component 659 676	conductor winding
+T20	Shape 752 758	trench
+T21	Operation 792 818	chemical mechanical polish
+T22	Shape 871 877	trench
+T23	Component 882 906	organic insulation layer
+T24	PhysicsFlow 916 933	cured photoresist
+T25	Attribution 959 977	planarized surface
+T26	Component 985 1002	conductor winding
+T27	Component 1026 1040	overlying yoke
+T28	Component 1047 1081	overlying organic insulation layer
+T29	Attribution 1102 1112	apex angle
+T30	Component 1120 1124	head
+T32	Component 1176 1193	conductor winding
+T33	Component 1199 1216	subsequent layers
+T34	Component 1220 1229	conductor
+T35	Component 1259 1270	first layer
+T36	Material 1407 1415	material
+T37	Operation 78 89	fabrication
+T38	Material 519 558	different inorganic insulation material
+T39	Material 712 730	conductor material
+T40	Material 830 848	conductor material
+T31	Component 1157 1172	multiple layers
+T41	Operation 1294 1343	conventional photoresist processes and structures
+T42	System 1383 1403	known pole structure
+R1	Oper Arg1:T37 Arg2:T2	
+R2	Oper Arg1:T37 Arg2:T3	
+R3	MakeMove Arg1:T8 Arg2:T7	
+R4	MadeOf Arg1:T8 Arg2:T9	
+R5	Manner Arg1:T7 Arg2:T6	
+R6	Purpose Arg1:T10 Arg2:T11	
+R7	Attr Arg1:T12 Arg2:T11	
+R8	MakeMove Arg1:T13 Arg2:T14	
+R9	Manner Arg1:T38 Arg2:T15	
+R10	MakeMove Arg1:T15 Arg2:T16	
+R11	Spatial Arg1:T17 Arg2:T18	
+R12	Spatial Arg1:T40 Arg2:T22	
+R13	MakeMove Arg1:T39 Arg2:T20	
+R14	Attr Arg1:T26 Arg2:T25	
+R15	Manner Arg1:T25 Arg2:T23	
+R16	Spatial Arg1:T23 Arg2:T27	
+R17	Attr Arg1:T30 Arg2:T29	
+R18	Comparison Arg1:T33 Arg2:T35	
+R19	Oper Arg1:T41 Arg2:T33	
+R20	Attr Arg1:T31 Arg2:T32	

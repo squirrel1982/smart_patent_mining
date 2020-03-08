@@ -1,0 +1,91 @@
+T2	Component 35 63	improved head-disk interface
+T3	Component 78 96	transducer carrier
+T5	Component 211 225	lubricant film
+T6	Component 243 249	slider
+T7	Component 256 281	front air-bearing surface
+T8	Attribution 370 409	central nonair-bearing recessed surface
+T9	Component 471 481	front pads
+T10	Location 489 501	surface area
+T11	Component 527 535	rear pad
+T13	Component 604 612	rear pad
+T14	Component 668 676	rear pad
+T16	Location 759 788	central nonair-bearing region
+T17	Component 909 917	rear pad
+T18	Component 925 931	slider
+T19	Component 942 946	disk
+T20	Component 1007 1015	rear pad
+T21	Attribution 1024 1036	leading edge
+T22	Component 1115 1129	lubricant film
+T25	EnergyFlow 1232 1256	unacceptable drag forces
+T26	PhysicsFlow 1274 1283	lubricant
+T27	Component 1303 1311	rear pad
+T28	Attribution 1323 1342	skewed leading edge
+T29	Component 1377 1383	slider
+T1	Component 2 27	data recording disk drive
+T4	Component 120 149	low-flying air-bearing slider
+T32	Component 233 237	disk
+T33	Component 307 338	equally-spaced air-bearing pads
+T34	Component 342 362	rear air-bearing pad
+T35	Component 430 461	front and rear air-bearing pads
+T36	Component 580 586	slider
+T12	Component 555 572	positive pitch up
+T37	PhysicsFlow 643 646	air
+T15	Component 692 703	air bearing
+T39	Location 711 723	rear portion
+T40	Component 731 737	slider
+T41	Attribution 888 901	flying height
+T42	Component 981 1001	rear air-bearing pad
+T43	Attribution 968 972	widt
+T44	Attribution 1052 1065	trailing edge
+T45	Component 1137 1141	disk
+T23	Attribution 1160 1181	lower disk velocities
+T24	ScientificConcept 1191 1211	disk inside diameter
+T46	Component 1293 1297	disk
+T31	Measure 1433 1453	disk inside diameter
+T47	Measure 1457 1473	outside diameter
+T30	Attribution 865 882	low-flying height
+T48	Component 836 842	slider
+T49	Location 816 828	central part
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	MakeMove Arg1:T3 Arg2:T2	
+R3	isA Arg1:T3 Arg2:T4	
+R4	Spatial Arg1:T5 Arg2:T32	
+R5	Spatial Arg1:T4 Arg2:T5	
+R6	Ownership Arg1:T6 Arg2:T7	
+R7	Ownership Arg1:T9 Arg2:T10	
+R8	Attr Arg1:T17 Arg2:T41	
+R9	Ownership Arg1:T18 Arg2:T17	
+R10	Attr Arg1:T42 Arg2:T43	
+R11	Attr Arg1:T20 Arg2:T21	
+R12	Comparison Arg1:T21 Arg2:T44	
+R13	MakeMove Arg1:T8 Arg2:T35	
+R14	Ownership Arg1:T6 Arg2:T34	
+R15	Attr Arg1:T6 Arg2:T8	
+R16	Manner Arg1:T33 Arg2:T7	
+R17	Ownership Arg1:T11 Arg2:T10	
+R18	Comparison Arg1:T9 Arg2:T11	
+R19	Ownership Arg1:T36 Arg2:T12	
+R20	MakeMove Arg1:T9 Arg2:T12	
+R21	Manner Arg1:T14 Arg2:T37	
+R22	Generate Arg1:T37 Arg2:T15	
+R23	Ownership Arg1:T39 Arg2:T15	
+R24	Ownership Arg1:T40 Arg2:T39	
+R25	Ownership Arg1:T48 Arg2:T49	
+T38	EnergyFlow 804 808	lift
+R26	Generate Arg1:T49 Arg2:T38	
+R27	MakeMove Arg1:T16 Arg2:T38	
+R28	Spatial Arg1:T18 Arg2:T19	
+R29	MakeMove Arg1:T43 Arg2:T41	
+R30	Spatial Arg1:T22 Arg2:T45	
+R31	Spatial Arg1:T20 Arg2:T22	
+R32	Attr Arg1:T20 Arg2:T23	
+R33	Spatial Arg1:T20 Arg2:T24	
+R34	Attr Arg1:T27 Arg2:T28	
+R35	MakeMove Arg1:T26 Arg2:T46	
+T50	Attribution 1400 1423	flying height variation
+R36	Measurement Arg1:T50 Arg2:T31	
+R37	Measurement Arg1:T50 Arg2:T47	
+T51	Attribution 1365 1369	skew
+R38	Attr Arg1:T29 Arg2:T51	
+R39	MakeMove Arg1:T28 Arg2:T51	
+R40	Purpose Arg1:T28 Arg2:T50	

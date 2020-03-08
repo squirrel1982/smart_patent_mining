@@ -1,0 +1,43 @@
+T1	Component 33 47	thin film head
+T2	Component 57 89	magnetoresistance effect element
+T3	Component 136 152	nonmagnetic film
+T4	Component 219 251	magnetoresistance effect element
+T5	Component 431 445	thin film head
+T6	Component 455 487	magnetoresistance effect element
+T7	Component 516 530	magnetic films
+T8	Component 537 553	nonmagnetic film
+T9	EnergyFlow 624 643	magnetic resistance
+T11	EnergyFlow 762 783	signal magnetic field
+T12	Component 118 132	magnetic films
+T13	Component 176 190	magnetic films
+T14	Component 196 201	leads
+T15	Attribution 264 269	width
+T16	Component 284 298	magnetic films
+T17	EnergyFlow 332 353	signal magnetic field
+T18	Component 391 396	leads
+T19	Measure 374 382	distance
+T20	Component 577 591	magnetic films
+T21	Operation 654 679	spin-dependent scattering
+T10	Component 715 729	magnetic films
+T22	Location 797 806	direction
+T23	EnergyFlow 827 848	signal magnetic field
+T24	Function 614 620	change
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	Ownership Arg1:T2 Arg2:T12	
+R3	Ownership Arg1:T2 Arg2:T3	
+R4	Spatial Arg1:T3 Arg2:T13	
+R5	Ownership Arg1:T2 Arg2:T14	
+R6	Spatial Arg1:T14 Arg2:T4	
+R7	Attr Arg1:T16 Arg2:T15	
+R8	Attr Arg1:T18 Arg2:T19	
+R9	MakeMove Arg1:T16 Arg2:T17	
+R10	Measurement Arg1:T15 Arg2:T19	
+R11	Ownership Arg1:T5 Arg2:T6	
+R12	Ownership Arg1:T6 Arg2:T7	
+R13	Ownership Arg1:T6 Arg2:T8	
+R14	Spatial Arg1:T8 Arg2:T20	
+R15	MakeMove Arg1:T20 Arg2:T24	
+R16	Attr Arg1:T9 Arg2:T24	
+R17	Ownership Arg1:T23 Arg2:T22	
+R18	Manner Arg1:T22 Arg2:T11	
+R19	MakeMove Arg1:T10 Arg2:T11	

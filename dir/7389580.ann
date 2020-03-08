@@ -1,0 +1,27 @@
+T1	Component 37 71	solid-state energy-storage devices
+T2	Component 82 99	fabrication films
+T3	Component 138 142	film
+T4	Component 149 170	energy-storage device
+T5	Component 201 221	first material layer
+T6	Component 241 250	substrate
+T8	Component 308 312	film
+T10	Material 347 361	energized ions
+T11	Material 367 382	second material
+T14	Component 437 441	film
+T15	Consequence 485 491	growth
+T16	Component 517 521	film
+T17	Operation 549 560	fabrication
+T18	Component 564 579	ultrathin films
+T19	Component 588 605	electrolyte films
+T20	Component 610 626	dielectric films
+T21	Operation 123 134	anneal step
+T13	ScientificConcept 496 509	stoichiometry
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	Ownership Arg1:T4 Arg2:T3	
+R4	Spatial Arg1:T5 Arg2:T6	
+R5	Oper Arg1:T17 Arg2:T18	
+R6	isA Arg1:T19 Arg2:T18	
+R7	isA Arg1:T20 Arg2:T18	
+R8	Ownership Arg1:T11 Arg2:T10	
+R9	Attr Arg1:T16 Arg2:T13	
+R10	Attr Arg1:T16 Arg2:T15	

@@ -1,0 +1,63 @@
+T1	Component 2 22	magnetic disk system
+T2	Component 35 48	magnetic head
+T3	Component 93 106	magnetic disk
+T4	Material 112 128	recording medium
+T5	Component 135 153	magnetic disk unit
+T6	System 163 189	head positioning mechanism
+T7	Component 210 223	magnetic head
+T8	Component 238 243	track
+T9	Component 251 264	magnetic disk
+T10	InfoFlow 281 298	servo information
+T11	Component 325 338	magnetic head
+T12	Component 352 359	MR film
+T13	Component 422 427	track
+T14	EnergyFlow 450 478	current supplying electrodes
+T15	Component 527 540	magnetic film
+T16	ScientificConcept 583 594	track width
+T17	Component 601 627	signal detecting electrode
+T18	Component 649 677	current supplying electrodes
+T19	EnergyFlow 730 756	signal detecting electrode
+T20	Component 823 843	magnetic disk system
+T21	Function 859 877	accurate alignment
+T22	Component 885 898	magnetic head
+T23	Component 904 925	closely spaced tracks
+T24	Attribution 717 722	width
+T25	EnergyFlow 789 817	current supplying electrodes
+T26	Component 704 711	MR film
+T27	Location 566 575	direction
+T28	Location 515 519	ends
+T29	Component 435 448	magnetic disk
+T30	Attribution 411 416	width
+T31	Location 394 403	direction
+T32	Component 306 319	magnetic disk
+R1	Ownership Arg1:T1 Arg2:T2	
+R2	Ownership Arg1:T1 Arg2:T5	
+R3	Spatial Arg1:T7 Arg2:T8	
+R4	Ownership Arg1:T9 Arg2:T8	
+R5	Spatial Arg1:T10 Arg2:T32	
+R6	Form Arg1:T3 Arg2:T4	
+R7	Ownership Arg1:T5 Arg2:T6	
+R8	Purpose Arg1:T6 Arg2:T7	
+T33	InfoFlow 61 65	data
+T34	InfoFlow 81 85	data
+R9	Purpose Arg1:T2 Arg2:T33	
+R10	Purpose Arg1:T2 Arg2:T34	
+R11	MakeMove Arg1:T34 Arg2:T3	
+R12	Ownership Arg1:T11 Arg2:T12	
+R13	Attr Arg1:T30 Arg2:T31	
+R14	Spatial Arg1:T12 Arg2:T31	
+R15	Attr Arg1:T13 Arg2:T30	
+R16	Ownership Arg1:T29 Arg2:T13	
+R17	Ownership Arg1:T11 Arg2:T14	
+R18	Attr Arg1:T15 Arg2:T28	
+R19	Manner Arg1:T27 Arg2:T15	
+R20	Attr Arg1:T16 Arg2:T27	
+R21	Ownership Arg1:T11 Arg2:T17	
+R22	Spatial Arg1:T17 Arg2:T18	
+R23	Spatial Arg1:T14 Arg2:T28	
+R24	Spatial Arg1:T18 Arg2:T26	
+R25	Attr Arg1:T19 Arg2:T24	
+R26	Comparison Arg1:T19 Arg2:T25	
+R27	Purpose Arg1:T20 Arg2:T21	
+R28	Ownership Arg1:T22 Arg2:T23	
+R29	Attr Arg1:T22 Arg2:T21	

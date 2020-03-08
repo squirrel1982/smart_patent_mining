@@ -1,0 +1,95 @@
+T1	Component 2 25	thin film magnetic head
+T2	Component 45 54	substrate
+T3	Component 71 81	seed layer
+T4	Component 89 98	substrate
+T5	Component 102 122	lower magnetic layer
+T6	Component 140 149	substrate
+T8	Component 179 195	insulative layer
+T9	Component 222 232	seed layer
+T10	Component 249 264	magnetic layers
+T11	Location 283 286	end
+T12	Component 294 314	lower magnetic layer
+T13	EnergyFlow 338 353	first side pole
+T14	Component 367 383	above seed layer
+T15	Component 389 393	seed
+T16	Component 416 431	magnetic layers
+T17	Location 456 459	end
+T18	Component 467 487	lower magnetic layer
+T19	EnergyFlow 511 527	second side pole
+T20	Component 541 556	same seed layer
+T21	Component 562 566	seed
+T22	EnergyFlow 572 599	first and second side poles
+T23	Location 620 640	upper and lower ends
+T24	Location 646 656	lower ends
+T25	Location 677 681	ends
+T26	Component 689 709	lower magnetic layer
+T27	EnergyFlow 713 729	first upper pole
+T28	Location 747 756	upper end
+T29	EnergyFlow 764 779	first side pole
+T30	EnergyFlow 785 801	first upper pole
+T31	Location 813 820	gap end
+T32	EnergyFlow 832 848	second side pole
+T33	Location 852 862	gap region
+T34	Material 866 886	nonmagnetic material
+T35	Location 913 920	gap end
+T36	EnergyFlow 928 944	first upper pole
+T37	EnergyFlow 948 965	second upper pole
+T38	Location 983 992	upper end
+T39	EnergyFlow 1000 1016	second side pole
+T40	Location 1032 1039	gap end
+T41	Location 1053 1063	gap region
+T42	System 1067 1098	diamond-like carbon (DLC) frame
+T43	Location 1120 1137	uppermost portion
+T44	Component 1145 1149	head
+T45	EnergyFlow 1166 1182	upper side poles
+T46	Location 1187 1197	gap region
+T47	System 1203 1212	DLC frame
+T48	ScientificConcept 1227 1247	structural integrity
+T49	Component 1255 1259	head
+T50	Function 1264 1279	wear protection
+T51	Component 1289 1293	head
+T52	Attribution 1307 1320	media surface
+T7	Shape 156 163	opening
+R1	Spatial Arg1:T1 Arg2:T2	
+R2	Spatial Arg1:T3 Arg2:T4	
+R3	Spatial Arg1:T5 Arg2:T6	
+R4	Spatial Arg1:T8 Arg2:T9	
+R5	Manner Arg1:T11 Arg2:T10	
+R6	Attr Arg1:T12 Arg2:T11	
+R7	Form Arg1:T14 Arg2:T15	
+R8	Manner Arg1:T17 Arg2:T16	
+R9	Attr Arg1:T18 Arg2:T17	
+R10	Form Arg1:T20 Arg2:T21	
+R11	Ownership Arg1:T22 Arg2:T23	
+R12	Attr Arg1:T26 Arg2:T25	
+R13	Manner Arg1:T25 Arg2:T24	
+R14	Attr Arg1:T29 Arg2:T28	
+R15	Manner Arg1:T28 Arg2:T27	
+R16	Spatial Arg1:T31 Arg2:T32	
+R17	Ownership Arg1:T30 Arg2:T31	
+R18	Ownership Arg1:T34 Arg2:T33	
+R19	Attr Arg1:T36 Arg2:T35	
+R20	Spatial Arg1:T33 Arg2:T35	
+R21	Manner Arg1:T38 Arg2:T37	
+R22	Attr Arg1:T39 Arg2:T38	
+R23	Spatial Arg1:T40 Arg2:T41	
+R24	Manner Arg1:T43 Arg2:T42	
+R25	Attr Arg1:T44 Arg2:T43	
+R26	Spatial Arg1:T44 Arg2:T45	
+R27	Spatial Arg1:T44 Arg2:T46	
+R28	Purpose Arg1:T47 Arg2:T48	
+R29	MakeMove Arg1:T48 Arg2:T49	
+R30	Purpose Arg1:T47 Arg2:T50	
+R31	Spatial Arg1:T51 Arg2:T52	
+R32	Ownership Arg1:T37 Arg2:T40	
+R33	Form Arg1:T14 Arg2:T13	
+R34	Form Arg1:T20 Arg2:T19	
+R35	Ownership Arg1:T8 Arg2:T7	
+R36	Ownership Arg1:T7 Arg2:T6	
+R37	Form Arg1:T10 Arg2:T13	
+R38	Purpose Arg1:T16 Arg2:T19	
+R39	MakeMove Arg1:T3 Arg2:T1	
+#1	AnnotatorNotes R39	我们在讲义6第2条添加了一条规则，针对使用xx（或者将xx怎么着一下）来制造YY
+#2	AnnotatorNotes R36	低磁层放置在底座上由绝缘层提供的一个开孔中，开孔--》拥有--》底座，说不通，这实际上是一个manner关系
+#3	AnnotatorNotes R33	讲义6第二条
+#4	AnnotatorNotes R34	讲义6第二条

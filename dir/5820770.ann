@@ -1,0 +1,53 @@
+T1	Component 13 49	pattern-etching thick alumina layers
+T2	Component 72 87	thin film heads
+T3	Component 89 92	TFH
+T4	Component 103 134	compatible metallic mask layers
+T5	PhysicsFlow 141 161	wet chemical etchant
+T6	Operation 167 187	deep alumina etching
+T7	Component 202 221	studless TFH device
+T8	Component 232 236	coil
+T9	Component 241 253	bonding pads
+T10	Shape 302 306	vias
+T11	Component 336 358	alumina overcoat layer
+T12	Component 373 385	bonding pads
+T13	Operation 415 422	etching
+T14	Shape 426 445	scribe-line grooves
+T16	Component 478 483	wafer
+T17	Operation 488 508	sawing and machining
+T18	Component 512 519	sliders
+T19	Shape 527 534	grooves
+T20	Material 550 566	alumina chipping
+T21	Consequence 574 591	stress and damage
+T22	Operation 610 641	sawing and machining operations
+T23	Operation 654 669	pattern-etching
+T24	Component 677 694	alumina undercoat
+T25	Function 724 739	precise craters
+T26	System 744 763	recessed structures
+T28	ScientificConcept 827 845	adverse topography
+T29	Attribution 850 867	elevated features
+T30	Component 871 882	TFH devices
+T15	Consequence 783 815	planarity and alleviate problems
+T27	Shape 449 466	street and alleys
+T31	Operation 711 720	formation
+R1	Alias Arg1:T2 Arg2:T3	
+R2	Ownership Arg1:T2 Arg2:T1	
+R3	MakeMove Arg1:T4 Arg2:T1	
+R4	MakeMove Arg1:T5 Arg2:T1	
+R5	Attr Arg1:T30 Arg2:T29	
+R6	Attr Arg1:T30 Arg2:T28	
+R7	Ownership Arg1:T24 Arg2:T23	
+R8	Purpose Arg1:T23 Arg2:T31	
+R9	Ownership Arg1:T26 Arg2:T25	
+R10	Oper Arg1:T31 Arg2:T25	
+R11	Oper Arg1:T22 Arg2:T21	
+R12	Oper Arg1:T21 Arg2:T20	
+#1	AnnotatorNotes R12	由...引起的  如何标引？
+#2	AnnotatorNotes T15	关于...的问题 如何标引？
+R13	Oper Arg1:T17 Arg2:T18	
+R14	Ownership Arg1:T27 Arg2:T14	
+R15	Oper Arg1:T13 Arg2:T14	
+R16	Spatial Arg1:T13 Arg2:T16	
+R17	Purpose Arg1:T13 Arg2:T17	
+R18	MakeMove Arg1:T10 Arg2:T11	
+R19	MakeMove Arg1:T10 Arg2:T12	
+R20	Purpose Arg1:T6 Arg2:T7	
